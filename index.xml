@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugh&#39;s Apprenticeship Blog</title>
+    <title>Hugh Sato</title>
     <link>http://proxycase.github.io/</link>
-    <description>Recent content on Hugh&#39;s Apprenticeship Blog</description>
+    <description>Recent content on Hugh Sato</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 26 Sep 2019 22:59:30 -0500</lastBuildDate>
@@ -39,6 +39,15 @@ Variety within the approach can come from: • Business context - For example, a
       
       <guid>http://proxycase.github.io/posts/first-day/</guid>
       <description>Hi! I&amp;rsquo;m Hugh, and today marks my first day as a Design Apprentice at 8th Light. For the last several years, I worked as a makerspace coordinator at the Northbrook Public Library, and helped design and build the makerspace from the ground-up, creating access to tools like 3D printers and laser cutters to the public. I created policies that shaped our services and opened up access to those outside of our own library, knowing that Northbrook is a unique area with plenty of resources to share.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>http://proxycase.github.io/about/</link>
+      <pubDate>Fri, 19 Apr 2019 21:37:58 +0530</pubDate>
+      
+      <guid>http://proxycase.github.io/about/</guid>
+      <description>This is some static page where you can write about yourself.</description>
     </item>
     
   </channel>
