@@ -6,21 +6,30 @@
     <description>Recent content on Hugh Sato</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Sep 2019 22:59:30 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 01 Oct 2019 13:30:07 -0500</lastBuildDate>
     
 	<atom:link href="https://proxycase.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>On Design Process Part 1</title>
+      <title>Design Process Part 2</title>
+      <link>https://proxycase.github.io/posts/design-process-part-2/</link>
+      <pubDate>Tue, 01 Oct 2019 13:30:07 -0500</pubDate>
+      
+      <guid>https://proxycase.github.io/posts/design-process-part-2/</guid>
+      <description>In the previous post, I wrote about the first two stages in the design process: Discover and Define. I’ll be diving deeper into the second half of the process, where we take ideas that were distilled through the process, and are made into real designs, and real code.
+Now that we’ve turned the Insights into “How might we’s,” there are a list of direct, actionable items to build out in our design program of choice.</description>
+    </item>
+    
+    <item>
+      <title>Design Process Part 1</title>
       <link>https://proxycase.github.io/posts/on-design-process-part-1/</link>
       <pubDate>Thu, 26 Sep 2019 22:59:30 -0500</pubDate>
       
       <guid>https://proxycase.github.io/posts/on-design-process-part-1/</guid>
-      <description>There are a variety of approaches and orders to the design process, but the purpose of the overall system remains the same:
-To distill information, and to use it to develop appropriate solutions to a user problems.
-Ideally, the design tackles problems specifically identified from user contexts. By studying users, we solve problems in a measureable, evidence-driven manner.
-Variety within the approach can come from: • Business context - For example, a software company might have different process needs than a forest-planting non-profit.</description>
+      <description>While there are a variety of approaches to the design process, the overall purpose of the system remains the same:
+To distill information, and to use it to develop appropriate solutions to a user problems. Ideally, the design tackles problems specifically identified from user contexts. By studying users, we solve problems in a measureable, evidence-driven manner.
+Why used a defined design process? Real problems arise when products and services are developed without proper design research.</description>
     </item>
     
     <item>
