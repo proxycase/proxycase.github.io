@@ -6,10 +6,19 @@
     <description>Recent content on Hugh Sato</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Oct 2019 12:51:17 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 04 Oct 2019 14:41:18 -0500</lastBuildDate>
     
 	<atom:link href="https://proxycase.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Evidence Based Design</title>
+      <link>https://proxycase.github.io/posts/evidence-based-design/</link>
+      <pubDate>Fri, 04 Oct 2019 14:41:18 -0500</pubDate>
+      
+      <guid>https://proxycase.github.io/posts/evidence-based-design/</guid>
+      <description>Last week, I had a design presentation which laid out the steps I took to build a fictional doggy daycare, and designed a website to interface with that business. While the project was internal and an experiment to push my skills, branding wasn’t a central focus of the project and I was ultimately asked about my color choices. Typically, I’m used to being given colors from clients from preexisting guidelines, but in this case, I had pulled up a color-theme making website and choose something that I thought just felt right.</description>
+    </item>
     
     <item>
       <title>Design Ethics</title>
