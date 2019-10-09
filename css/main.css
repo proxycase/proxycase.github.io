@@ -2,8 +2,8 @@ body {
 	font-family: williams-caslon-text, serif;
   font-weight: 300;
 	color: #333;
-	line-height: 2.3;
-	font-size: 1rem;
+	line-height: 2.0rem;
+	font-size: 1.1rem;
 }
 
 a, a:hover {
@@ -118,6 +118,10 @@ h5 {
 h6 {
     font-weight: 300;
     font-size: .9rem
+}
+
+.markdown {
+	max-width: 37rem;
 }
 
 .align-center {
