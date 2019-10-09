@@ -6,13 +6,22 @@
     <description>Recent content on Hugh Sato</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 09 Oct 2019 14:15:51 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 09 Oct 2019 14:30:50 -0500</lastBuildDate>
     
 	<atom:link href="https://proxycase.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Wallet Ux Day 2</title>
+      <title>Wallet UX Day 3</title>
+      <link>https://proxycase.github.io/posts/wallet-ux-day-3/</link>
+      <pubDate>Wed, 09 Oct 2019 14:30:50 -0500</pubDate>
+      
+      <guid>https://proxycase.github.io/posts/wallet-ux-day-3/</guid>
+      <description>Tasks  Finalize competitive analysis synthesis Review survey data Review themes into insights Meet with “stakeholders” Begin wireframes for testing  Lots of discoveries Last night’s interview was really insightful because I was able to talk to someone who directly helps set up mobile applications for customers at a major bank. Her insights were really great, and while I did also ask her about her banking habits, there are a number of discoveries that she can identify as being problems: * Huge confusion on the difference between available balance and current balance * People never remember their passwords – use of faceID and fingerprint is high * There’s an in-app authenticator, which generates a number to help authenticate users over the phone.</description>
+    </item>
+    
+    <item>
+      <title>Wallet UX - Day 2</title>
       <link>https://proxycase.github.io/posts/wallet-ux-day-2/</link>
       <pubDate>Wed, 09 Oct 2019 14:15:51 -0500</pubDate>
       
