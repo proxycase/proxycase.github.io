@@ -6,10 +6,19 @@
     <description>Recent content on Hugh Sato</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Oct 2019 16:35:49 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 09 Oct 2019 14:15:51 -0500</lastBuildDate>
     
 	<atom:link href="https://proxycase.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Wallet Ux Day 2</title>
+      <link>https://proxycase.github.io/posts/wallet-ux-day-2/</link>
+      <pubDate>Wed, 09 Oct 2019 14:15:51 -0500</pubDate>
+      
+      <guid>https://proxycase.github.io/posts/wallet-ux-day-2/</guid>
+      <description>Tasks  Competitive Analysis synthesis Send out surveys Interviews Synthesize Interviews to Themes Start building deck  After sending out the survey last night, I got about 10 responses to a variety of questions about banking and budgeting. 100% of the responses were self-identified as Millenial, which makes sense but also the right audience for the project. I think what is most telling about the difference between my interviews and the survey-takers is that the interviewees tended to have entirely online banks, and the survey-takers had credit unions, and had also chosen banks based on their physical proximity to them.</description>
+    </item>
     
     <item>
       <title>Wallet UX Project - Day 1</title>
