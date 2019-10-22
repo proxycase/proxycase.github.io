@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Html Elements Part I - Hugh Sato</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Html Elements Part I" />
+<meta property="og:description" content="td:nth-child(1) { width: 120px; text-align:center; } table { width:100%; margin-bottom: 20px; } th { background:AliceBlue; }  Up ahead, I attempt to re-configure and define all the html elements in my own words and also try to figure out where they belong in relationship to each other. Part one of two.
+The Head          &lt;html&gt; Is the root level of an himl document." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://proxycase.github.io/posts/html-elements-1/" />
+<meta property="article:published_time" content="2019-10-21T13:43:09-05:00" />
+<meta property="article:modified_time" content="2019-10-21T13:43:09-05:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Html Elements Part I"/>
+<meta name="twitter:description" content="td:nth-child(1) { width: 120px; text-align:center; } table { width:100%; margin-bottom: 20px; } th { background:AliceBlue; }  Up ahead, I attempt to re-configure and define all the html elements in my own words and also try to figure out where they belong in relationship to each other. Part one of two.
+The Head          &lt;html&gt; Is the root level of an himl document."/>
+<link rel="stylesheet" href="https://use.typekit.net/qfb6lpj.css">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="https://proxycase.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://proxycase.github.io/css/main.css" /><script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script><script src="https://proxycase.github.io/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<div class="hugh-logo">
+  <svg xmlns="http://www.w3.org/2000/svg" width="103" height="69" viewBox="0 0 103 69">
+    <defs>
+      <linearGradient id="logo-a" x1="19.804%" x2="56.376%" y1="10.515%" y2="97.587%">
+        <stop offset="0%" stop-color="#FCEA52"/>
+        <stop offset="100%" stop-color="#FFE400"/>
+      </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(-1 -6)">
+      <path fill="url(#logo-a)" d="M48.8021475,73.304497 C67.6529044,73.3116215 81.181137,66.961948 81.1740263,48.1907402 C81.1704642,38.798596 78.5357485,24.1985987 72.3490935,18.0445779 C66.1710546,11.8991278 51.3300036,8.69752317 41.9111931,8.69395828 C23.0604362,8.68682991 14.9392014,26.6377732 14.945741,43.9051054 C14.9522886,61.1724376 29.9513905,73.2973605 48.8021475,73.304497 Z" transform="rotate(-105 48.06 41)"/>
+      <g fill="#494949" transform="translate(0 6)">
+        <path d="M37.4252662,47.5346782 C38.1955369,47.5393479 38.8886442,46.8483479 39.5045882,45.4616783 C38.8716766,44.0674121 38.1700855,43.367923 37.3998148,43.3632111 C36.2444088,43.3562225 35.3134647,44.2843256 35.3204533,45.4362269 C35.3275211,46.5881283 36.2698602,47.5276263 37.4252662,47.5346782 Z" transform="rotate(-38 37.413 45.449)"/>
+        <path fill-rule="nonzero" d="M56.0643221,19.7539947 L40.4799566,43.7002912 C40.0441962,44.4173737 40.6362311,45.8458291 41.3721279,46.2704486 C42.1080247,46.6950681 43.8787682,46.4921849 44.3145286,45.7751025 L58.0064052,20.8104761 C58.4421656,20.0933936 58.742302,19.3218819 58.0064052,18.8972625 C57.2705085,18.472643 56.5000825,19.0369123 56.0643221,19.7539947 Z"/>
+        <path d="M53.2413105,33.7844718 C49.1911039,31.9985212 64.535692,28.9984606 76.2738078,30.1621426 C88.0119235,31.3258245 104.815853,35.4583164 103.199512,41.4388902 C101.583171,47.419464 57.2915171,35.5704224 53.2413105,33.7844718 Z" transform="rotate(-5 77.943 36.506)"/>
+        <path d="M4.01702029,17.1062011 C1.38351828,15.3232825 16.1449238,12.8612178 24.6381714,13.5674482 C33.131419,14.2736785 50.2439181,19.0215596 48.8271468,25.0280863 C47.4103755,31.034613 6.6505223,18.8891196 4.01702029,17.1062011 Z" transform="scale(-1 1) rotate(-42 0 88.599)"/>
+        <path d="M48.0439205,43.3635888 C49.3340233,40.4134815 61.2340795,40.4108902 71.933921,43.3583866 C82.6337626,46.3058831 92.131697,48.3962128 92.130871,52.1425619 C92.1300449,55.888911 87.9256222,58.4634489 73.2318072,53.9132686 C58.5379921,49.3630884 46.7538177,46.3136961 48.0439205,43.3635888 Z" transform="rotate(1 70.039 48.745)"/>
+        <path d="M0.904933657,27.5272341 C2.05512589,24.7393463 12.8204795,24.8018691 22.5169579,27.652752 C32.2134363,30.5036349 40.8177016,32.5358752 40.8384966,36.0851624 C40.859123,39.6344496 37.0703444,42.0506098 23.751544,37.6595358 C10.4327436,33.2684617 -0.24525858,30.3151218 0.904933657,27.5272341 Z" transform="scale(-1 1) rotate(-34 0 100.88)"/>
+        <path d="M44.6648852,52.0384895 C45.7527188,52.0384895 46.6345821,50.9739623 46.6345821,49.6608013 C46.6345821,48.7853607 45.9780165,47.992798 44.6648852,47.2831132 C43.3517538,47.992798 42.6951882,48.7853607 42.6951882,49.6608013 C42.6951882,50.9739623 43.5770516,52.0384895 44.6648852,52.0384895 Z"/>
+      </g>
+    </g>
+  </svg>
+</div>
+	<h1 class="site-title">Hugh Sato</h1>
+	<div class="site-description"><h2>Writings of an 8L Design Apprentice</h2><nav class="nav social">
+			<ul class="flat"><a href="https://github.com/proxycase" title="Github"><i data-feather="github"></i></a><a href="https://twitter.com/hughsato" title="Twitter"><i data-feather="twitter"></i></a><a href="https://www.instagram.com/abalonespider/" title="Instagram"><i data-feather="instagram"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">Html Elements Part I</h1>
+			<div class="meta">Posted at &mdash; Oct 21, 2019</div>
+		</div>
+
+		<div class="markdown">
+			<style type="text/css">
+td:nth-child(1) {
+  width: 120px;
+  text-align:center;
+}
+table {
+  width:100%;
+  margin-bottom: 20px;
+}
+th {
+  background:AliceBlue;
+}
+</style>
+
+<p>Up ahead, I attempt to re-configure and define all the html elements in my own words and also try to figure out where they belong in relationship to each other. Part one of two.</p>
+
+<h2 id="the-head">The Head</h2>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>&lt;html&gt;</code></td>
+<td>Is the root level of an himl document. All other elements are children of this element.</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>&lt;head&gt;</code></td>
+<td>Container for machine-readable information like metadata. These are things like your title, scripts and stylesheets.</td>
+</tr>
+
+<tr>
+<td><code>&lt;base&gt;</code></td>
+<td>Specified the base URL to use for all relative URLs in a document. This is helpful when you have most of all of your assets nested in another folder and you don’t want to repeat yourself across the html.</td>
+</tr>
+
+<tr>
+<td><code>&lt;link&gt;</code></td>
+<td>Link your external resources like stylesheets, favicon, and more.</td>
+</tr>
+
+<tr>
+<td><code>&lt;style&gt;</code></td>
+<td>Contains embedded style information for a document, or part of a document. Overrides imported styles from <link></td>
+</tr>
+
+<tr>
+<td><code>&lt;title&gt;</code></td>
+<td>Defines the title shown at the top in a browser.</td>
+</tr>
+
+<tr>
+<td><code>&lt;meta&gt;</code></td>
+<td>Metadata that can’t be described by the other meta-related elements, like charset. Often uses a name and content attribute as a key pair.</td>
+</tr>
+</tbody>
+</table>
+
+<hr>
+
+<h2 id="sectioning-root-the-body">Sectioning Root: The Body</h2>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>&lt;body&gt;</code></td>
+<td>Container for the content of an HTML document. There can only be one <code>&lt;body&gt;</code> to rule them all, find them, bring them all and in the document bind them… in a single html document.</td>
+</tr>
+</tbody>
+</table>
+
+<hr>
+
+<h2 id="sectioning-content">Sectioning Content</h2>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>&lt;header&gt;</code></td>
+<td>Contains introductory information or navigational aids. Can also contain a logo, search form, authors, etc.</td>
+</tr>
+
+<tr>
+<td><code>&lt;footer&gt;</code></td>
+<td>Contains footer for its nearest sectioning content or sectioning root element. Can contain the author for the section, copyright data, or links related to the section. Note: not only used for the footer of an entire website, but can be used for bottoms of blog post lists, and more.</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>&lt;hgroup&gt;</code></td>
+<td>Groups a set of h1-h6 tags</td>
+</tr>
+
+<tr>
+<td><code>&lt;h1&gt; &lt;h2&gt; &lt;h3&gt; &lt;h4&gt; &lt;h5&gt; &lt;h6&gt;</code></td>
+<td>Six levels of section headings. Avoid skipping heading levels, so start from h1 and work your way down to h6. Also avoid using h1 more than once on a page. Don’t use them to resize text –  instead, use font-size.</td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>&lt;address&gt;</code></td>
+<td>Contains HTML provides contact information.</td>
+</tr>
+
+<tr>
+<td><code>&lt;aside&gt;</code></td>
+<td>Represents content only indirectly related to document’s main content.</td>
+</tr>
+
+<tr>
+<td><code>&lt;main&gt;</code></td>
+<td>Represents the main content area of the <code>&lt;body&gt;</code> of the document. Contains content that is directly related to or expands upon the central topic of a document.</td>
+</tr>
+
+<tr>
+<td><code>&lt;nav&gt;</code></td>
+<td>Contains the section that provides navigation links either within or outside of the current document. Commonly, these are menus, tables of content, and indexes.</td>
+</tr>
+
+<tr>
+<td><code>&lt;section&gt;</code></td>
+<td>Represents a standalone section, which doesn’t already have a more semantic element to represent it.</td>
+</tr>
+</tbody>
+</table>
+
+<hr>
+
+<h2 id="dividing-content">Dividing Content</h2>
+
+<h3 id="sections-and-dividers">Sections and Dividers</h3>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>&lt;div&gt;</code></td>
+<td>The Content Division element, which is a generic container for most anything that doesn’t already have a specifically defined purpose.</td>
+</tr>
+
+<tr>
+<td><code>&lt;p&gt;</code></td>
+<td>Paragraph of text.</td>
+</tr>
+
+<tr>
+<td><code>&lt;blockquote&gt;</code></td>
+<td>Contains an extended quotation, and renders as an indentation. You can also give a URL source by using  the <code>cite</code> attribute or text representation by using <code>&lt;cite&gt;</code></td>
+</tr>
+
+<tr>
+<td><code>&lt;pre&gt;</code></td>
+<td>Show text within exactly as represented, including things like code.</td>
+</tr>
+
+<tr>
+<td><code>&lt;hr&gt;</code></td>
+<td>Represents thematic break between paragraph-level elements. This can be a scene change in a story, or shift of topic in a section.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="lists">Lists</h3>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>&lt;ol&gt;</code></td>
+<td>Ordered Lists (eg. numbered lists) are contained within this element.</td>
+</tr>
+
+<tr>
+<td><code>&lt;ul&gt;</code></td>
+<td>Unordered Lists (eg. bullet lists) are contained within this element.</td>
+</tr>
+
+<tr>
+<td><code>&lt;li&gt;</code></td>
+<td>List items are individually contained with this element.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="glossaries-metadata-content">Glossaries, Metadata Content</h3>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>&lt;dl&gt;</code></td>
+<td>Provides description list. Encloses a list of groups of terms (using the <code>&lt;dt&gt;</code> element) and descriptions <code>&lt;dd&gt;</code>. Common use is to implement a glossary or to display metadata.</td>
+</tr>
+
+<tr>
+<td><code>&lt;dt&gt;</code></td>
+<td>Specifies a term in a description or definition list. Must be used inside of a <code>&lt;dl&gt;</code></td>
+</tr>
+
+<tr>
+<td><code>&lt;dd&gt;</code></td>
+<td>Provides description, definition or value for preceding term, inside of a <code>&lt;dl&gt;</code></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="figures">Figures</h3>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>&lt;figure&gt;</code></td>
+<td>Represents self-contained content</td>
+</tr>
+
+<tr>
+<td><code>&lt;figcaption&gt;</code></td>
+<td>Caption or legend describing its parent <code>&lt;figure&gt;</code></td>
+</tr>
+</tbody>
+</table>
+
+<hr>
+
+<h2 id="inline-text-semantics">Inline Text Semantics</h2>
+
+<p>These elements are used to wrap words or small sections of text to denote their role, appearance (and therefore relation to its context), and any interactive behaviors (like anchor links).</p>
+
+<p>I’ll get the most confusing one out of the way and then the rest of the inline text semantic elements.</p>
+
+<hr>
+
+<h3 id="the-mystical-world-of-making-text-stand-out-and-also-not">The mystical world of making text stand out (and also not)</h3>
+
+<p>There are a number of elements used to mark things as important or to help text stand out. Gonna try to break that down here.</p>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>&lt;strong&gt;</code></td>
+<td>Indicates that the content has strong importance, seriousness, or urgency. Use to indicate that this text is more important than its surrounding text.</td>
+</tr>
+</tbody>
+</table>
+
+<blockquote>
+<p>eg. <strong>Important:</strong> Leaving this page will destroy your changes.</p>
+</blockquote>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>&lt;b&gt;</code></td>
+<td>Helps draw the reader’s attention to element’s contents, which are not otherwise granted special importance. Use for keywords in a summary, product names in a review, or other spans of text whose typical presentation would be boldfaced, but not of special importance.</td>
+</tr>
+</tbody>
+</table>
+
+<blockquote>
+<p>eg. The <strong>tables</strong> and <strong>chairs</strong> are next for pickup. ||</p>
+</blockquote>
+
+<p><strong>If there is no semantic purpose to use either <code>&lt;strong&gt;</code> or <code>&lt;b&gt;</code>, and you are styling text for decorative purposes, use css font-weight: bold instead.</strong></p>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>&lt;em&gt;</code></td>
+<td>Stress emphasize contents. Similar to <code>&lt;strong&gt;</code> in that it puts verbal stress or indicates importance over nearby content.</td>
+</tr>
+</tbody>
+</table>
+
+<blockquote>
+<p>eg. There was <em>no way</em> we could let them get away with it.</p>
+</blockquote>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>&lt;i&gt;</code></td>
+<td>No added emphasis or importance on its contents, but visually denotes that the content is set off from the normal prose – this can be like foreign words, names of things, character thoughts, or when the text refers to the definition of a word instead of representing is semantic meaning.</td>
+</tr>
+</tbody>
+</table>
+
+<blockquote>
+<p>eg. The <em>Kobayashi Maru</em> is a test designed to test the character of <em>Starfleet Academy cadets</em> in a no-win scenario.</p>
+</blockquote>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>&lt;mark&gt;</code></td>
+<td>Marked or highlighted text for reference or notation purposes. Used to denote a certain degree of relevance.</td>
+</tr>
+</tbody>
+</table>
+
+<p><strong>Don’t use <code>&lt;mark&gt;</code> to highlight the entire section, but rather, use a <code>&lt;span&gt;</code> with the appropriate css applied.</strong></p>
+
+<h3 id="common-inline-text-elements">Common Inline text elements</h3>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>&lt;a&gt;</code></td>
+<td>Anchor (or hyperlink) to web pages, files, email addresses locations within the page, or anywhere a URL can access.</td>
+</tr>
+
+<tr>
+<td><code>&lt;abbr&gt;</code></td>
+<td>Abbreviation element, representing an abbreviation or acronym. Which is funny because it’s a long-ass word and abbr is an abbreviation of itself. Hilarious.</td>
+</tr>
+
+<tr>
+<td><code>&lt;q&gt;</code></td>
+<td>Contents are a quotation, and renders typically with quotation marks.</td>
+</tr>
+
+<tr>
+<td><code>&lt;s&gt;</code></td>
+<td>Contents are rendered with strikethrough.</td>
+</tr>
+
+<tr>
+<td><code>&lt;sub&gt;</code></td>
+<td>Subscript</td>
+</tr>
+
+<tr>
+<td><code>&lt;sup&gt;</code></td>
+<td>Superscript</td>
+</tr>
+
+<tr>
+<td><code>&lt;small&gt;</code></td>
+<td>Side-comments and small print, like copyright and legal text. By default it will render one size smaller, like small to x-small.</td>
+</tr>
+
+<tr>
+<td><code>&lt;span&gt;</code></td>
+<td>Common generic enclosed inline text. Like <code>&lt;div&gt;</code> but while <code>&lt;div&gt;</code> is block-level, <code>&lt;span&gt;</code> is an inline element.</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="other-inline-text-elements">Other Inline Text Elements</h3>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>&lt;code&gt;</code></td>
+<td>Displays contents styled (typically monospace) to represent computer code.</td>
+</tr>
+
+<tr>
+<td><code>&lt;data&gt;</code></td>
+<td>Displays contents styled (typically monospace) to represent computer code.</td>
+</tr>
+
+<tr>
+<td><code>&lt;dfn&gt;</code></td>
+<td>Indicates that the contained text is being currently defined within a sentence or phrase.  On a dictionary website, this would enclose the term being defined while being defined or used in a sentence.</td>
+</tr>
+
+<tr>
+<td><code>&lt;kbd&gt;</code></td>
+<td>Keyboard Input element represents a span of inline text denoting textual user input from a keyboard, voice input, or any text entry device. <br> Please press <kbd>Ctrl</kbd> + <kbd>s</kbd> to save.</td>
+</tr>
+
+<tr>
+<td><code>&lt;samp&gt;</code></td>
+<td>Contains text that represents output from a computer program, whether it be a sample or copied output.</td>
+</tr>
+
+<tr>
+<td><code>&lt;time&gt;</code></td>
+<td>Represents a specific period in time.</td>
+</tr>
+
+<tr>
+<td><code>&lt;u&gt;</code></td>
+<td>Contains a span of text that indicates it has a non-textual annotation, like red squiggles to denote misspellings.</td>
+</tr>
+
+<tr>
+<td><code>&lt;var&gt;</code></td>
+<td>Contains name of a variable in a mathematical expression or programming context. By default it italicizes the text.</td>
+</tr>
+
+<tr>
+<td><code>&lt;wbr&gt;</code></td>
+<td>Word Break Opportunity; a place where text can be broken to another line, when line-breaking rules would otherwise not create a break at that location.</td>
+</tr>
+</tbody>
+</table>
+
+<hr>
+
+<h3 id="helpful-inline-text-elements-for-nonenglish-languages">Helpful inline text elements for non-English languages.</h3>
+
+<h4 id="text-direction">Text Direction</h4>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>&lt;bdi&gt;</code></td>
+<td>Tells the browsers bidirectional algorithm to treat the element’s contents direction (left to right text or right to left text) in isolation to its context. This is useful when you don’t know what the direction of the text being embedded will be.</td>
+</tr>
+
+<tr>
+<td><code>&lt;bdo&gt;</code></td>
+<td>Tells the browsers bidirectional algorithm to override the current direction of the text with the <code>dir=“ltr”</code> or <code>dir=“rtl”</code> attribute.</td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="ruby-text">Ruby Text</h4>
+
+<p><em>Ruby text</em> are small annotation texts (“glosses”) displayed alongside or above a Chinese, Japanese, or Korean kanji. It’s named after an old printer’s term for the very small size of 5.5pts.</p>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>&lt;ruby&gt;</code></td>
+<td>This element is used to create a section of ruby enabled text.</td>
+</tr>
+
+<tr>
+<td><code>&lt;rbc&gt;</code></td>
+<td>Ruby Base Container for <code>&lt;rb&gt;</code> and <code>&lt;rt&gt;</code> ruby annotations (Firefox Only)</td>
+</tr>
+
+<tr>
+<td><code>&lt;rb&gt;</code></td>
+<td>The base text component that is being annotated.</td>
+</tr>
+
+<tr>
+<td><code>&lt;rt&gt;</code></td>
+<td>The ruby text component, providing pronunciation, translation, or transliteration for an East Asian character. Must be contained within a <code>&lt;ruby&gt;</code> element.</td>
+</tr>
+
+<tr>
+<td><code>&lt;rp&gt;</code></td>
+<td>Ruby fallback parenthesis is used to provide parenthesis for browsers that do not support ruby annotations.</td>
+</tr>
+
+<tr>
+<td><code>&lt;rtc&gt;</code></td>
+<td>Ruby Text Container container for providing semantic annotation of characters in a <code>&lt;ruby&gt;</code> It’s like providing a ruby annotation for the whole dang thing and it’s very meta. (Firefox Only)</td>
+</tr>
+</tbody>
+</table>
+
+<p>This example only properly works on Firefox, but on other browsers should give a sense of what fallback looks like.</p>
+
+<p><ruby xml:lang="zh-Hant" style="ruby-position: under;">
+<rbc>
+<rb>馬</rb><rp>(</rp><rt>mǎ</rt><rp>)</rp>
+<rb>來</rb><rp>(</rp><rt>lái</rt><rp>)</rp>
+<rb>西</rb><rp>(</rp><rt>xī</rt><rp>)</rp>
+ <rb>亞</rb><rp>(</rp><rt>yà</rt><rp>)</rp>
+</rbc>
+<rtc xml:lang="en" style="ruby-position: over;">
+<rp>(</rp><rt>Malaysia</rt><rp>)</rp>
+</rtc>
+</ruby></p>
+
+<p>This example should work on all browsers (except Edge)</p>
+
+<p><ruby>
+<rb>馬</rb><rp>(</rp><rt>mǎ</rt><rp>)</rp>
+</ruby></p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;ruby xml:lang=&#34;zh-Hant&#34; style=&#34;ruby-position: under;&#34;&gt;
+	&lt;rbc&gt;
+		&lt;rb&gt;馬&lt;/rb&gt;&lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;mǎ&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;
+		&lt;rb&gt;來&lt;/rb&gt;&lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;lái&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;
+		&lt;rb&gt;西&lt;/rb&gt;&lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;xī&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;
+		&lt;rb&gt;亞&lt;/rb&gt;&lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;yà&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;
+	&lt;/rbc&gt;
+	&lt;rtc xml:lang=&#34;en&#34; style=&#34;ruby-position: over;&#34;&gt;
+		&lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;Malaysia&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;
+	&lt;/rtc&gt;
+&lt;/ruby&gt;</pre></div>
+		</div>
+
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+	</nav>
+</div><script>feather.replace()</script>
+</body>
+</html>

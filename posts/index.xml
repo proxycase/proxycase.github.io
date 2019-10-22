@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Hugh Sato</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 09 Oct 2019 14:30:50 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 21 Oct 2019 13:43:09 -0500</lastBuildDate>
     
 	<atom:link href="https://proxycase.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Html Elements Part I</title>
+      <link>https://proxycase.github.io/posts/html-elements-1/</link>
+      <pubDate>Mon, 21 Oct 2019 13:43:09 -0500</pubDate>
+      
+      <guid>https://proxycase.github.io/posts/html-elements-1/</guid>
+      <description>td:nth-child(1) { width: 120px; text-align:center; } table { width:100%; margin-bottom: 20px; } th { background:AliceBlue; }  Up ahead, I attempt to re-configure and define all the html elements in my own words and also try to figure out where they belong in relationship to each other. Part one of two.
+The Head          &amp;lt;html&amp;gt; Is the root level of an himl document.</description>
+    </item>
     
     <item>
       <title>Wallet UX Day 3</title>
