@@ -6,10 +6,20 @@
     <description>Recent content on Hugh Sato</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Oct 2019 13:43:09 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 21 Oct 2019 13:43:09 -0600</lastBuildDate>
     
 	<atom:link href="https://proxycase.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Html Elements Part II</title>
+      <link>https://proxycase.github.io/posts/html-elements-2/</link>
+      <pubDate>Mon, 21 Oct 2019 13:43:09 -0600</pubDate>
+      
+      <guid>https://proxycase.github.io/posts/html-elements-2/</guid>
+      <description>Part two of two on &amp;quot;all&amp;quot; of the html elements (that are not obsolete).
+Images &amp;amp; Multimedia          &amp;lt;img&amp;gt; Used to embed images. Replaces the ancient &amp;lt;image&amp;gt; element. &amp;lt;img&amp;gt; so 2008, you so two-thousand-and-LATE.             &amp;lt;map&amp;gt; Used to create an image map (which is an area that is clickable, and might have multiple clickable spots, like a map, or an image that has clickable areas).</description>
+    </item>
     
     <item>
       <title>Html Elements Part I</title>
@@ -17,8 +27,8 @@
       <pubDate>Mon, 21 Oct 2019 13:43:09 -0500</pubDate>
       
       <guid>https://proxycase.github.io/posts/html-elements-1/</guid>
-      <description>td:nth-child(1) { width: 120px; text-align:center; } table { width:100%; margin-bottom: 20px; } th { background:AliceBlue; }  Up ahead, I attempt to re-configure and define all the html elements in my own words and also try to figure out where they belong in relationship to each other. Part one of two.
-The Head          &amp;lt;html&amp;gt; Is the root level of an himl document.</description>
+      <description>In the following articles, I attempt to re-configure and define all the html elements in my own words and also try to figure out where they belong in relationship to each other. Part one of two.
+The Head          &amp;lt;html&amp;gt; Is the root level of an himl document. All other elements are children of this element.             &amp;lt;head&amp;gt; Container for machine-readable information like metadata.</description>
     </item>
     
     <item>

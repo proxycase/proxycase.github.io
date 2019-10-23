@@ -53,6 +53,23 @@ code {
 	color: rgb(65, 65, 65);
 }
 
+.c-funky-text__container {
+	width:100%;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.c-funky-text {
+	display:inline-block;
+	font-family: freude,sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 1.5em;
+	background: #e2efff;
+	padding: 20px;
+	border-radius: 20px;
+}
+
 /* end typography */
 
 html,button,input,select,textarea {
