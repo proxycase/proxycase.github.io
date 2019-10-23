@@ -46,6 +46,10 @@ pre {
 	color: rgb(65, 65, 65);
 }
 
+.o-centered {
+	text-align: center;
+}
+
 code {
 	font-family: 'Courier New', Courier, monospace;
 	font-weight: 700;
