@@ -6,10 +6,21 @@
     <description>Recent content on Hugh Sato</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Oct 2019 13:43:09 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 24 Oct 2019 11:21:44 -0500</lastBuildDate>
     
 	<atom:link href="https://proxycase.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Semantic Html</title>
+      <link>https://proxycase.github.io/posts/semantic-html/</link>
+      <pubDate>Thu, 24 Oct 2019 11:21:44 -0500</pubDate>
+      
+      <guid>https://proxycase.github.io/posts/semantic-html/</guid>
+      <description>Why write semantic HTML? There is a lot of confusing code out there in the world today. It’s not limited to HTML or CSS, but perhaps because these “languages” are so prolific, somewhat easy to learn, and because everyone has their own “style,”
+I know that at least for me there wasn’t a lot of incentive to think too hard about doing everything properly as long as it worked.
+When I started, I used generic divs for everything, and sections to hold those divs, and relied on classes for pretty much any sort of styling.</description>
+    </item>
     
     <item>
       <title>Html Elements Part II</title>
