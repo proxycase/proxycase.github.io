@@ -19,7 +19,7 @@
       <guid>https://proxycase.github.io/posts/semantic-html/</guid>
       <description>Why write semantic HTML? There is a lot of confusing code out there in the world today. It’s not limited to HTML or CSS, but perhaps because these “languages” are so prolific, somewhat easy to learn, and because everyone has their own “style,”
 I know that at least for me there wasn’t a lot of incentive to think too hard about doing everything properly as long as it worked.
-When I started, I used generic divs for everything, and sections to hold those divs, and relied on classes for pretty much any sort of styling.</description>
+When I first started writing html websites, I used generic divs for everything, and divs to hold those divs, and relied on classes for pretty much any sort of styling.</description>
     </item>
     
     <item>
