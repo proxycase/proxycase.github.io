@@ -95,20 +95,20 @@
 <p><code>.block__element--modifier</code></p>
 
 <p>or in real-life...</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">.btn {}
-.btn--red {}
-.btn__icon {}
-.btn__icon--dark {}
-.btn__icon--light {}</pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#2b91af">btn</span> {}
+.<span style="color:#2b91af">btn--red</span> {}
+.<span style="color:#2b91af">btn__icon</span> {}
+.<span style="color:#2b91af">btn__icon--dark</span> {}
+.<span style="color:#2b91af">btn__icon--light</span> {}</code></pre></div>
 <p>Write this in sass and you have:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">.btn {
-	&amp;--red {}			// non-icon red button
-	&amp;__icon {
-						// default icon button style
-		&amp;--dark {}		// dark modifier style
-		&amp;--light {}		// light modifier style
-	}
-}</pre></div>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scss" data-lang="scss"><span style="color:#2b91af">.btn</span> {
+	<span style="color:#00f">&amp;</span>--red {}			<span style="color:#008000">// non-icon red button
+</span><span style="color:#008000"></span>	<span style="color:#00f">&amp;</span>__icon {
+						<span style="color:#008000">// default icon button style
+</span><span style="color:#008000"></span>		<span style="color:#00f">&amp;</span>--dark {}		<span style="color:#008000">// dark modifier style
+</span><span style="color:#008000"></span>		<span style="color:#00f">&amp;</span>--light {}		<span style="color:#008000">// light modifier style
+</span><span style="color:#008000"></span>	}
+}</code></pre></div>
 <h3 id="so-things-to-note">So things to note:</h3>
 
 <ul>
@@ -126,37 +126,37 @@
 <p>However, more than likely in that case, you should consider that the block high up in the tree should actually be called something else (aka container) so that the items within have their own block.</p>
 
 <p>Check out this (incorrect) example:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;section class=&#34;articles&#34;&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;section class=<span style="color:#a31515">&#34;articles&#34;</span>&gt;
 	&lt;h1&gt;Articles&lt;/h1&gt;
-	&lt;article class=&#34;articles__item&#34;&gt;
-		&lt;hgroup class=&#34;articles__item--heading&#34;&gt;
+	&lt;article class=<span style="color:#a31515">&#34;articles__item&#34;</span>&gt;
+		&lt;hgroup class=<span style="color:#a31515">&#34;articles__item--heading&#34;</span>&gt;
 			&lt;h2&gt;BEM Naming&lt;/h2&gt;
 			&lt;h3&gt;Making readable CSS in 2019&lt;/h3&gt;
 		&lt;/hgroup&gt;
-		&lt;figure class=&#34;articles__item--figure&#34;&gt;
-			&lt;img src=&#34;article-image.png&#34; class=&#34;articles__item__figure--img&#34;&gt;
-			&lt;figcaption class=&#34;articles__item__figure--caption&gt;Picture of an angry kitten&lt;/figcaption&gt;
-		&lt;/figure&gt;
-		&lt;p class=&#34;article__content&#34;&gt;Lorem ipsum dolor imet...&lt;/p&gt;
+		&lt;figure class=<span style="color:#a31515">&#34;articles__item--figure&#34;</span>&gt;
+			&lt;img src=<span style="color:#a31515">&#34;article-image.png&#34;</span> class=<span style="color:#a31515">&#34;articles__item__figure--img&#34;</span>&gt;
+			&lt;figcaption class=<span style="color:#a31515">&#34;articles__item__figure--caption&gt;Picture of an angry kitten&lt;/figcaption&gt;
+</span><span style="color:#a31515">		&lt;/figure&gt;
+</span><span style="color:#a31515">		&lt;p class=&#34;</span>article__content<span style="">&#34;</span>&gt;Lorem ipsum dolor imet...&lt;/p&gt;
 	&lt;/article&gt;
-	&lt;!-- ... more articles below --&gt;
-&lt;/section</pre></div>
+	<span style="color:#008000">&lt;!-- ... more articles below --&gt;</span>
+<span style="">&lt;</span>/section</code></pre></div>
 <p>It's against BEM rules to chain modifiers and elements as you see above, for obvious reasons – it gets way too long and unwieldy. First, see if you can simplify and remove any extra html elements (sometimes you don't need to use elements just because they are available), or do the following:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;section class=&#34;articles&#34;&gt;
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;section class=<span style="color:#a31515">&#34;articles&#34;</span>&gt;
 	&lt;h1&gt;Articles&lt;/h1&gt;
-	&lt;article class=&#34;article&#34;&gt;
-		&lt;hgroup class=&#34;article__headings&#34;&gt;
+	&lt;article class=<span style="color:#a31515">&#34;article&#34;</span>&gt;
+		&lt;hgroup class=<span style="color:#a31515">&#34;article__headings&#34;</span>&gt;
 			&lt;h2&gt;BEM Naming&lt;/h2&gt;
 			&lt;h3&gt;Making readable CSS in 2019&lt;/h3&gt;
 		&lt;/hgroup&gt;
-		&lt;figure class=&#34;article-figure&#34;&gt;
-			&lt;img src=&#34;article-image.png&#34; class=&#34;article-figure__img&#34;&gt;
-			&lt;figcaption class=&#34;article-figure__caption&#34;&gt;Picture of an angry kitten&lt;/figcaption&gt;
+		&lt;figure class=<span style="color:#a31515">&#34;article-figure&#34;</span>&gt;
+			&lt;img src=<span style="color:#a31515">&#34;article-image.png&#34;</span> class=<span style="color:#a31515">&#34;article-figure__img&#34;</span>&gt;
+			&lt;figcaption class=<span style="color:#a31515">&#34;article-figure__caption&#34;</span>&gt;Picture of an angry kitten&lt;/figcaption&gt;
 		&lt;/figure&gt;
-		&lt;p class=&#34;article__content&#34;&gt;Lorem ipsum dolor imet...&lt;/p&gt;
+		&lt;p class=<span style="color:#a31515">&#34;article__content&#34;</span>&gt;Lorem ipsum dolor imet...&lt;/p&gt;
 	&lt;/article&gt;
-	&lt;!-- ... more articles below --&gt;
-&lt;/section</pre></div>
+	<span style="color:#008000">&lt;!-- ... more articles below --&gt;</span>
+<span style="">&lt;</span>/section</code></pre></div>
 <p>First, I separated the <code>articles</code> base from the <code>article</code> to remove a single layer of potential nesting problems. Plus it's a bit more semantic.</p>
 
 <p>For the <code>figure</code>, it's tempting to think about it as a child of the article, but once you get to the <code>img</code> or <code>caption</code>, you run into problems.</p>
