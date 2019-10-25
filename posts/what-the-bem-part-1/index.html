@@ -86,11 +86,8 @@
 </ol>
 
 <blockquote>
-<p>“CSS is not a pretty language. While it is simple to learn and get started with, it soon becomes problematic at any reasonable scale. There isn’t much we can do to change how CSS works, but we can make changes to the way we author and structure it.”</p>
-
-<ul>
-<li>cssguidelines</li>
-</ul>
+<p>“CSS is not a pretty language. While it is simple to learn and get started with, it soon becomes problematic at any reasonable scale. There isn’t much we can do to change how CSS works, but we can make changes to the way we author and structure it.”
+–cssguidelines</p>
 </blockquote>
 
 <p>Here’s what BEM looks like:</p>
@@ -121,7 +118,7 @@
 <li>Modifier classes are generally be used along with their base. For example: <code>class=&quot;btn btn--tall&quot;</code></li>
 <li>Using BEM is a departure from using IDs, which have too much override power by an order of magnitude. Use IDs only for functionality and</li>
 <li>Avoid high specificity. BEM also departs from using css selectors, like <code>.block &gt; ul</code> in the css. Instead, use the <code>block block--modifier pattern</code></li>
-<li>Avoid multi-word names if possible and hyphenate them. It's a general rule in CSS to hyphenate</li>
+<li>Avoid multi-word names if possible and hyphenate them. It's a general rule in CSS to hyphenate multi-words instead of camelCase as it mirrors attribute names and increases legibility.</li>
 </ul>
 
 <p>The block by itself gets a shared style, but can be paired with just a modifier, or just an element. The modifier and element do not exist without the block, unless perhaps you’re further down the tree and the element is now a block in that context.</p>
