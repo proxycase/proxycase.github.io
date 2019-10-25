@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Hugh Sato</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 24 Oct 2019 11:21:44 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 25 Oct 2019 11:57:22 -0500</lastBuildDate>
     
 	<atom:link href="https://proxycase.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>What the Bem - Part I</title>
+      <link>https://proxycase.github.io/posts/what-the-bem-part-1/</link>
+      <pubDate>Fri, 25 Oct 2019 11:57:22 -0500</pubDate>
+      
+      <guid>https://proxycase.github.io/posts/what-the-bem-part-1/</guid>
+      <description>The BEM naming convention methodology is designed to reduce complexity, and increase legibility, and discoverability. By looking at a CSS class written in BEM, you should get a sense of:
+ Knowing what that selector might do To have an idea of where it might be used Knowing the relationship between the class names   “CSS is not a pretty language. While it is simple to learn and get started with, it soon becomes problematic at any reasonable scale.</description>
+    </item>
     
     <item>
       <title>Semantic Html</title>

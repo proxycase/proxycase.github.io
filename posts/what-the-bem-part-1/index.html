@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>What the Bem - Part I - Hugh Sato</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="What the Bem - Part I" />
+<meta property="og:description" content="The BEM naming convention methodology is designed to reduce complexity, and increase legibility, and discoverability. By looking at a CSS class written in BEM, you should get a sense of:
+ Knowing what that selector might do To have an idea of where it might be used Knowing the relationship between the class names   “CSS is not a pretty language. While it is simple to learn and get started with, it soon becomes problematic at any reasonable scale." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://proxycase.github.io/posts/what-the-bem-part-1/" />
+<meta property="article:published_time" content="2019-10-25T11:57:22-05:00" />
+<meta property="article:modified_time" content="2019-10-25T11:57:22-05:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="What the Bem - Part I"/>
+<meta name="twitter:description" content="The BEM naming convention methodology is designed to reduce complexity, and increase legibility, and discoverability. By looking at a CSS class written in BEM, you should get a sense of:
+ Knowing what that selector might do To have an idea of where it might be used Knowing the relationship between the class names   “CSS is not a pretty language. While it is simple to learn and get started with, it soon becomes problematic at any reasonable scale."/>
+<link rel="stylesheet" href="https://use.typekit.net/qfb6lpj.css">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="https://proxycase.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://proxycase.github.io/css/main.css" /><script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script><script src="https://proxycase.github.io/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<div class="hugh-logo">
+  <svg xmlns="http://www.w3.org/2000/svg" width="103" height="69" viewBox="0 0 103 69">
+    <defs>
+      <linearGradient id="logo-a" x1="19.804%" x2="56.376%" y1="10.515%" y2="97.587%">
+        <stop offset="0%" stop-color="#FCEA52"/>
+        <stop offset="100%" stop-color="#FFE400"/>
+      </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(-1 -6)">
+      <path fill="url(#logo-a)" d="M48.8021475,73.304497 C67.6529044,73.3116215 81.181137,66.961948 81.1740263,48.1907402 C81.1704642,38.798596 78.5357485,24.1985987 72.3490935,18.0445779 C66.1710546,11.8991278 51.3300036,8.69752317 41.9111931,8.69395828 C23.0604362,8.68682991 14.9392014,26.6377732 14.945741,43.9051054 C14.9522886,61.1724376 29.9513905,73.2973605 48.8021475,73.304497 Z" transform="rotate(-105 48.06 41)"/>
+      <g fill="#494949" transform="translate(0 6)">
+        <path d="M37.4252662,47.5346782 C38.1955369,47.5393479 38.8886442,46.8483479 39.5045882,45.4616783 C38.8716766,44.0674121 38.1700855,43.367923 37.3998148,43.3632111 C36.2444088,43.3562225 35.3134647,44.2843256 35.3204533,45.4362269 C35.3275211,46.5881283 36.2698602,47.5276263 37.4252662,47.5346782 Z" transform="rotate(-38 37.413 45.449)"/>
+        <path fill-rule="nonzero" d="M56.0643221,19.7539947 L40.4799566,43.7002912 C40.0441962,44.4173737 40.6362311,45.8458291 41.3721279,46.2704486 C42.1080247,46.6950681 43.8787682,46.4921849 44.3145286,45.7751025 L58.0064052,20.8104761 C58.4421656,20.0933936 58.742302,19.3218819 58.0064052,18.8972625 C57.2705085,18.472643 56.5000825,19.0369123 56.0643221,19.7539947 Z"/>
+        <path d="M53.2413105,33.7844718 C49.1911039,31.9985212 64.535692,28.9984606 76.2738078,30.1621426 C88.0119235,31.3258245 104.815853,35.4583164 103.199512,41.4388902 C101.583171,47.419464 57.2915171,35.5704224 53.2413105,33.7844718 Z" transform="rotate(-5 77.943 36.506)"/>
+        <path d="M4.01702029,17.1062011 C1.38351828,15.3232825 16.1449238,12.8612178 24.6381714,13.5674482 C33.131419,14.2736785 50.2439181,19.0215596 48.8271468,25.0280863 C47.4103755,31.034613 6.6505223,18.8891196 4.01702029,17.1062011 Z" transform="scale(-1 1) rotate(-42 0 88.599)"/>
+        <path d="M48.0439205,43.3635888 C49.3340233,40.4134815 61.2340795,40.4108902 71.933921,43.3583866 C82.6337626,46.3058831 92.131697,48.3962128 92.130871,52.1425619 C92.1300449,55.888911 87.9256222,58.4634489 73.2318072,53.9132686 C58.5379921,49.3630884 46.7538177,46.3136961 48.0439205,43.3635888 Z" transform="rotate(1 70.039 48.745)"/>
+        <path d="M0.904933657,27.5272341 C2.05512589,24.7393463 12.8204795,24.8018691 22.5169579,27.652752 C32.2134363,30.5036349 40.8177016,32.5358752 40.8384966,36.0851624 C40.859123,39.6344496 37.0703444,42.0506098 23.751544,37.6595358 C10.4327436,33.2684617 -0.24525858,30.3151218 0.904933657,27.5272341 Z" transform="scale(-1 1) rotate(-34 0 100.88)"/>
+        <path d="M44.6648852,52.0384895 C45.7527188,52.0384895 46.6345821,50.9739623 46.6345821,49.6608013 C46.6345821,48.7853607 45.9780165,47.992798 44.6648852,47.2831132 C43.3517538,47.992798 42.6951882,48.7853607 42.6951882,49.6608013 C42.6951882,50.9739623 43.5770516,52.0384895 44.6648852,52.0384895 Z"/>
+      </g>
+    </g>
+  </svg>
+</div>
+	<h1 class="site-title">Hugh Sato</h1>
+	<div class="site-description"><h2>Writings of an 8L Design Apprentice</h2><nav class="nav social">
+			<ul class="flat"><a href="https://github.com/proxycase" title="Github"><i data-feather="github"></i></a><a href="https://twitter.com/hughsato" title="Twitter"><i data-feather="twitter"></i></a><a href="https://www.instagram.com/abalonespider/" title="Instagram"><i data-feather="instagram"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">What the Bem - Part I</h1>
+			<div class="meta">Posted at &mdash; Oct 25, 2019</div>
+		</div>
+
+		<div class="markdown">
+			<p>The BEM naming convention methodology is designed to reduce complexity, and increase legibility, and discoverability. By looking at a CSS class written in BEM, you should get a sense of:</p>
+
+<ol>
+<li>Knowing what that selector might do</li>
+<li>To have an idea of where it might be used</li>
+<li>Knowing the relationship between the class names</li>
+</ol>
+
+<blockquote>
+<p>“CSS is not a pretty language. While it is simple to learn and get started with, it soon becomes problematic at any reasonable scale. There isn’t much we can do to change how CSS works, but we can make changes to the way we author and structure it.”</p>
+
+<ul>
+<li>cssguidelines</li>
+</ul>
+</blockquote>
+
+<p>Here’s what BEM looks like:</p>
+
+<p><code>.block__element--modifier</code></p>
+
+<p>or in real-life...</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">.btn {}
+.btn--red {}
+.btn__icon {}
+.btn__icon--dark {}
+.btn__icon--light {}</pre></div>
+<p>Write this in sass and you have:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">.btn {
+	&amp;--red {}			// non-icon red button
+	&amp;__icon {
+						// default icon button style
+		&amp;--dark {}		// dark modifier style
+		&amp;--light {}		// light modifier style
+	}
+}</pre></div>
+<h3 id="so-things-to-note">So things to note:</h3>
+
+<ul>
+<li>The Block is the root component.</li>
+<li>The Element is a specific component of that root.</li>
+<li>The Modifier is a variant or extension of the block.</li>
+<li>Modifier classes are generally be used along with their base. For example: <code>class=&quot;btn btn--tall&quot;</code></li>
+<li>Using BEM is a departure from using IDs, which have too much override power by an order of magnitude. Use IDs only for functionality and</li>
+<li>Avoid high specificity. BEM also departs from using css selectors, like <code>.block &gt; ul</code> in the css. Instead, use the <code>block block--modifier pattern</code></li>
+<li>Avoid multi-word names if possible and hyphenate them. It's a general rule in CSS to hyphenate</li>
+</ul>
+
+<p>The block by itself gets a shared style, but can be paired with just a modifier, or just an element. The modifier and element do not exist without the block, unless perhaps you’re further down the tree and the element is now a block in that context.</p>
+
+<p>However, more than likely in that case, you should consider that the block high up in the tree should actually be called something else (aka container) so that the items within have their own block.</p>
+
+<p>Check out this (incorrect) example:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;section class=&#34;articles&#34;&gt;
+	&lt;h1&gt;Articles&lt;/h1&gt;
+	&lt;article class=&#34;articles__item&#34;&gt;
+		&lt;hgroup class=&#34;articles__item--heading&#34;&gt;
+			&lt;h2&gt;BEM Naming&lt;/h2&gt;
+			&lt;h3&gt;Making readable CSS in 2019&lt;/h3&gt;
+		&lt;/hgroup&gt;
+		&lt;figure class=&#34;articles__item--figure&#34;&gt;
+			&lt;img src=&#34;article-image.png&#34; class=&#34;articles__item__figure--img&#34;&gt;
+			&lt;figcaption class=&#34;articles__item__figure--caption&gt;Picture of an angry kitten&lt;/figcaption&gt;
+		&lt;/figure&gt;
+		&lt;p class=&#34;article__content&#34;&gt;Lorem ipsum dolor imet...&lt;/p&gt;
+	&lt;/article&gt;
+	&lt;!-- ... more articles below --&gt;
+&lt;/section</pre></div>
+<p>It's against BEM rules to chain modifiers and elements as you see above, for obvious reasons – it gets way too long and unwieldy. First, see if you can simplify and remove any extra html elements (sometimes you don't need to use elements just because they are available), or do the following:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;section class=&#34;articles&#34;&gt;
+	&lt;h1&gt;Articles&lt;/h1&gt;
+	&lt;article class=&#34;article&#34;&gt;
+		&lt;hgroup class=&#34;article__headings&#34;&gt;
+			&lt;h2&gt;BEM Naming&lt;/h2&gt;
+			&lt;h3&gt;Making readable CSS in 2019&lt;/h3&gt;
+		&lt;/hgroup&gt;
+		&lt;figure class=&#34;article-figure&#34;&gt;
+			&lt;img src=&#34;article-image.png&#34; class=&#34;article-figure__img&#34;&gt;
+			&lt;figcaption class=&#34;article-figure__caption&#34;&gt;Picture of an angry kitten&lt;/figcaption&gt;
+		&lt;/figure&gt;
+		&lt;p class=&#34;article__content&#34;&gt;Lorem ipsum dolor imet...&lt;/p&gt;
+	&lt;/article&gt;
+	&lt;!-- ... more articles below --&gt;
+&lt;/section</pre></div>
+<p>First, I separated the <code>articles</code> base from the <code>article</code> to remove a single layer of potential nesting problems. Plus it's a bit more semantic.</p>
+
+<p>For the <code>figure</code>, it's tempting to think about it as a child of the article, but once you get to the <code>img</code> or <code>caption</code>, you run into problems.</p>
+
+<p>Do I name it <code>article__figure--img</code> and <code>article__figure--caption</code>? Well, the problem is that <code>&lt;img&gt;</code> and <code>&lt;caption&gt;</code> are not modifiers of the <code>&lt;figure&gt;</code>, but are elements of that region.</p>
+
+<p>By deciding to make <code>article-figure</code> a standalone base, you can declare the img and caption as elements. This means you maintain modularity, because these items are now independent of their parent containers, and it simplifies the language.</p>
+
+<p><code>article-figure__img</code> and <code>article-figure__caption</code></p>
+
+<h3 id="modularizing-further--staying-flat">Modularizing Further &amp; Staying Flat</h3>
+
+<p>Depending on the situation, there might be a more elegant way to do this as well, and depending on where this figure-img-caption might reappear on your website/application, it may be more concise to detach it from the article for reusability, by simply using:</p>
+
+<p><code>figure</code>, <code>figure__img</code> and <code>figure__caption</code></p>
+
+<hr>
+
+<p>More examples of things like this can be found at: <a href="https://seesparkbox.com/foundry/bem_by_example">BEM by Example: Best Practices for BEM CSS Naming</a>
+<a href="https://medium.com/tech-tajawal/bem-simple-naming-convention-for-css-classes-9660438d04a2">BEM Simple Naming Convention For CSS Classes - tajawal - Medium</a></p>
+
+<hr>
+
+<p>Part two will dive deeper into a specific example regarding a webpage developed as part of an earlier design project, Bork co.</p>
+
+		</div>
+
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+	</nav>
+</div><script>feather.replace()</script>
+</body>
+</html>
