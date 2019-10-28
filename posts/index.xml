@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Hugh Sato</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Oct 2019 11:57:22 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 25 Oct 2019 12:05:04 -0500</lastBuildDate>
     
 	<atom:link href="https://proxycase.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>What the Bem – Part 2</title>
+      <link>https://proxycase.github.io/posts/what-the-bem-part-2/</link>
+      <pubDate>Fri, 25 Oct 2019 12:05:04 -0500</pubDate>
+      
+      <guid>https://proxycase.github.io/posts/what-the-bem-part-2/</guid>
+      <description>The Block For this post, we&#39;ll be looking at the following example pulled from one of my recent projects.
+
+Thinking out loud This is a &amp;lt;section&amp;gt; on my homepage, describing features in a 3 column setup. This could be either a grid/flexbox situation, where each flow directly on top of each other at a certain media size, or instead of taking too much vertical space, fold into a carousel – but carousels aren&#39;t great for accessibility or conversion.</description>
+    </item>
     
     <item>
       <title>What the Bem - Part I</title>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>What the Bem – Part 2 - Hugh Sato</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="What the Bem – Part 2" />
+<meta property="og:description" content="The Block For this post, we&#39;ll be looking at the following example pulled from one of my recent projects.
+
+Thinking out loud This is a &lt;section&gt; on my homepage, describing features in a 3 column setup. This could be either a grid/flexbox situation, where each flow directly on top of each other at a certain media size, or instead of taking too much vertical space, fold into a carousel – but carousels aren&#39;t great for accessibility or conversion." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://proxycase.github.io/posts/what-the-bem-part-2/" />
+<meta property="article:published_time" content="2019-10-25T12:05:04-05:00" />
+<meta property="article:modified_time" content="2019-10-25T12:05:04-05:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="What the Bem – Part 2"/>
+<meta name="twitter:description" content="The Block For this post, we&#39;ll be looking at the following example pulled from one of my recent projects.
+
+Thinking out loud This is a &lt;section&gt; on my homepage, describing features in a 3 column setup. This could be either a grid/flexbox situation, where each flow directly on top of each other at a certain media size, or instead of taking too much vertical space, fold into a carousel – but carousels aren&#39;t great for accessibility or conversion."/>
+<link rel="stylesheet" href="https://use.typekit.net/qfb6lpj.css">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="https://proxycase.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://proxycase.github.io/css/main.css" /><script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script><script src="https://proxycase.github.io/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<div class="hugh-logo">
+  <svg xmlns="http://www.w3.org/2000/svg" width="103" height="69" viewBox="0 0 103 69">
+    <defs>
+      <linearGradient id="logo-a" x1="19.804%" x2="56.376%" y1="10.515%" y2="97.587%">
+        <stop offset="0%" stop-color="#FCEA52"/>
+        <stop offset="100%" stop-color="#FFE400"/>
+      </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(-1 -6)">
+      <path fill="url(#logo-a)" d="M48.8021475,73.304497 C67.6529044,73.3116215 81.181137,66.961948 81.1740263,48.1907402 C81.1704642,38.798596 78.5357485,24.1985987 72.3490935,18.0445779 C66.1710546,11.8991278 51.3300036,8.69752317 41.9111931,8.69395828 C23.0604362,8.68682991 14.9392014,26.6377732 14.945741,43.9051054 C14.9522886,61.1724376 29.9513905,73.2973605 48.8021475,73.304497 Z" transform="rotate(-105 48.06 41)"/>
+      <g fill="#494949" transform="translate(0 6)">
+        <path d="M37.4252662,47.5346782 C38.1955369,47.5393479 38.8886442,46.8483479 39.5045882,45.4616783 C38.8716766,44.0674121 38.1700855,43.367923 37.3998148,43.3632111 C36.2444088,43.3562225 35.3134647,44.2843256 35.3204533,45.4362269 C35.3275211,46.5881283 36.2698602,47.5276263 37.4252662,47.5346782 Z" transform="rotate(-38 37.413 45.449)"/>
+        <path fill-rule="nonzero" d="M56.0643221,19.7539947 L40.4799566,43.7002912 C40.0441962,44.4173737 40.6362311,45.8458291 41.3721279,46.2704486 C42.1080247,46.6950681 43.8787682,46.4921849 44.3145286,45.7751025 L58.0064052,20.8104761 C58.4421656,20.0933936 58.742302,19.3218819 58.0064052,18.8972625 C57.2705085,18.472643 56.5000825,19.0369123 56.0643221,19.7539947 Z"/>
+        <path d="M53.2413105,33.7844718 C49.1911039,31.9985212 64.535692,28.9984606 76.2738078,30.1621426 C88.0119235,31.3258245 104.815853,35.4583164 103.199512,41.4388902 C101.583171,47.419464 57.2915171,35.5704224 53.2413105,33.7844718 Z" transform="rotate(-5 77.943 36.506)"/>
+        <path d="M4.01702029,17.1062011 C1.38351828,15.3232825 16.1449238,12.8612178 24.6381714,13.5674482 C33.131419,14.2736785 50.2439181,19.0215596 48.8271468,25.0280863 C47.4103755,31.034613 6.6505223,18.8891196 4.01702029,17.1062011 Z" transform="scale(-1 1) rotate(-42 0 88.599)"/>
+        <path d="M48.0439205,43.3635888 C49.3340233,40.4134815 61.2340795,40.4108902 71.933921,43.3583866 C82.6337626,46.3058831 92.131697,48.3962128 92.130871,52.1425619 C92.1300449,55.888911 87.9256222,58.4634489 73.2318072,53.9132686 C58.5379921,49.3630884 46.7538177,46.3136961 48.0439205,43.3635888 Z" transform="rotate(1 70.039 48.745)"/>
+        <path d="M0.904933657,27.5272341 C2.05512589,24.7393463 12.8204795,24.8018691 22.5169579,27.652752 C32.2134363,30.5036349 40.8177016,32.5358752 40.8384966,36.0851624 C40.859123,39.6344496 37.0703444,42.0506098 23.751544,37.6595358 C10.4327436,33.2684617 -0.24525858,30.3151218 0.904933657,27.5272341 Z" transform="scale(-1 1) rotate(-34 0 100.88)"/>
+        <path d="M44.6648852,52.0384895 C45.7527188,52.0384895 46.6345821,50.9739623 46.6345821,49.6608013 C46.6345821,48.7853607 45.9780165,47.992798 44.6648852,47.2831132 C43.3517538,47.992798 42.6951882,48.7853607 42.6951882,49.6608013 C42.6951882,50.9739623 43.5770516,52.0384895 44.6648852,52.0384895 Z"/>
+      </g>
+    </g>
+  </svg>
+</div>
+	<h1 class="site-title">Hugh Sato</h1>
+	<div class="site-description"><h2>Writings of an 8L Design Apprentice</h2><nav class="nav social">
+			<ul class="flat"><a href="https://github.com/proxycase" title="Github"><i data-feather="github"></i></a><a href="https://twitter.com/hughsato" title="Twitter"><i data-feather="twitter"></i></a><a href="https://www.instagram.com/abalonespider/" title="Instagram"><i data-feather="instagram"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">What the Bem – Part 2</h1>
+			<div class="meta">Posted at &mdash; Oct 25, 2019</div>
+		</div>
+
+		<div class="markdown">
+			<h3 id="the-block">The Block</h3>
+
+<p>For this post, we'll be looking at the following example pulled from one of my recent projects.</p>
+
+<p><figure><img src="/img/bork-example-1.png" alt="Bork Section Example"></figure></p>
+
+<h4 id="thinking-out-loud">Thinking out loud</h4>
+
+<p>This is a <code>&lt;section&gt;</code> on my homepage, describing features in a 3 column setup. This could be either a grid/flexbox situation, where each flow directly on top of each other at a certain media size, or instead of taking too much vertical space, fold into a carousel – but carousels aren't great for accessibility or conversion.</p>
+
+<p>The <code>&lt;header&gt;</code> of this section contains a single <code>h2</code> and a sub-heading, which are in a centered block. It looks something like this:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;section&gt;
+    &lt;header&gt;
+      &lt;h2&gt;What&#39;s great about staying with us?&lt;/h2&gt;
+      &lt;p&gt;Still on the fence? Bork gets your breeds needs!&lt;/p&gt;
+    &lt;/header&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;figure&gt;
+          &lt;img src=<span style="color:#a31515">&#34;picture.jpg&#34;</span> alt=<span style="color:#a31515">&#34;Dog in backseat of car&#34;</span>&gt;
+        &lt;/figure&gt;
+        &lt;h3&gt;It&#39;s convenient&lt;/h3&gt;
+        &lt;p&gt;Whether you drop off your pet, or use our pick-up service, we&#39;re available when you need it.&lt;/p&gt;
+        &lt;a href=<span style="color:#a31515">&#34;somewhere.html&#34;</span>&gt;
+          Our Hours
+        &lt;/a&gt;
+      &lt;/li&gt;
+      {{/*  more li&#39;s here ...  */}}
+    &lt;/ul&gt;
+&lt;/section&gt;</code></pre></div>
+<p>Because all items are the same style, I’ll just focus on the one and make BEM-style classes for just this snippet of HTML.</p>
+
+<p>First, I want to call the section something. As it’s something of a feature of the business, I’ll call it a <code>feature__container</code> with a <code>feature__header</code> and a <code>feature__list</code>.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">  &lt;section class=<span style="color:#a31515">“feature”</span>&gt;
+    &lt;div class=<span style="color:#a31515">“feature__header”</span>&gt;
+      &lt;h2&gt;What’s great about staying with us?&lt;/h2&gt;
+      Still on the fence? Bork gets your breeds needs!
+    &lt;/div&gt;
+
+    &lt;ul class=<span style="color:#a31515">“feature__list”</span>&gt;
+		[...]</code></pre></div>
+<p>In terms of a modifier, there’s another section on this website that uses the same pattern, but instead has two columns instead of three. So each individual item should be responsive to the column system they fit inside.</p>
+
+<h3 id="elements--dealing-with-the-supernest">Elements &amp; dealing with the super-nest™</h3>
+
+<p>HTML can get really nested. While I’ll write a separate article about un-nesting CSS later, it’s good to avoid nesting css if at all possible for creating modular, adaptable components, which can keep things DRY (Don’t repeat yourself!).</p>
+
+<p>The following example was found via <a href="https://codeburst.io/understanding-css-bem-naming-convention-a8cca116d252">CSS BEM Naming Convention</a></p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;header&gt;
+  &lt;nav&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;a&gt;Some link&lt;/a&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;</code></pre></div>
+<p>In this case, since it’s against BEM rules to chain elements like <code>block__element__element</code>, then their suggestion here is to use the <code>header</code> as your container, and <code>nav</code> as your block root, with its children being elements of <code>.navigation</code>.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#2b91af">container</span> { }
+.<span style="color:#2b91af">navigation</span> {
+
+  <span style="">&amp;__menu</span> <span style="">{</span> }
+	&amp;__item { }
+	&amp;__link { }
+<span style="">}</span></code></pre></div>
+<p><em>Note:</em> in sass, the &amp; symbol attaches its parent to the name of the item. So <code>&amp;__menu</code> computes into <code>.navigation__menu</code></p>
+
+<p>The HTML structure then becomes:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;header class=<span style="color:#a31515">“container”</span>&gt;
+	&lt;nav class=<span style="color:#a31515">“navigation”</span>&gt;
+		&lt;ul class=<span style="color:#a31515">“navigation__menu”</span>&gt;
+      	&lt;li class=<span style="color:#a31515">“navigation__item”</span>&gt;
+        		&lt;a class=<span style="color:#a31515">“navigation__link”</span>&gt;Some link&lt;/a&gt;
+      	&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/nav&gt;
+&lt;/header&gt;</code></pre></div>
+<p>In this way, we don't nest or chain the CSS names, but rather name the elements for what purpose they serve.</p>
+
+<h3 id="modifiers">Modifiers</h3>
+
+<p>Modifiers can modify either the block or the block element, meaning they can exist in two forms:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#2b91af">block__element--modifier</span>
+.<span style="color:#2b91af">block--modifier</span></code></pre></div>
+<p>They are typically added as a secondary (override) class along with the base block or block__element, like so:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;section class=<span style="color:#a31515">&#34;vanguard vanguard--blue&#34;</span>&gt;
+	<span style="color:#008000">&lt;!-- content here --&gt;</span>
+&lt;/section&gt;</code></pre></div>
+<p>This allows you to keep things DRY, as you don't need to repeat any styles applied to the base class, in your modifier class. Your modifier class only contains what is modified.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#2b91af">vanguard</span> {
+	<span style="color:#00f">background</span>: rgb(15, 200, 200);
+	content-align: <span style="color:#00f">center</span>;
+	<span style="color:#00f">padding</span>: 0 <span style="color:#00f">auto</span>;
+}
+
+.<span style="color:#2b91af">vanguard--blue</span> {
+	<span style="color:#00f">background</span>: AliceBlue;
+}</code></pre></div>
+<h3 id="commenting">Commenting</h3>
+
+<p>Lastly, providing some short and succinct documentation on the css class declaration can help provide direction in terms of what that class affects.  Add a quick comment before the base class css definition so that you in the future (and potentially others) can quickly scan a CSS document to figure out how things are styled, and how to make quick adjustments as necessary.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">// Affects sections outside of main on homepage
+.<span style="color:#2b91af">feature</span> {
+	<span style="color:#00f">display</span>:<span style="color:#00f">flex</span>;
+	<span style="color:#00f">max-width</span>: 30<span style="color:#2b91af">rem</span>;
+}
+
+.<span style="color:#2b91af">feature__header</span> {
+	<span style="color:#00f">line-height</span>: 2<span style="color:#2b91af">em</span>;
+}</code></pre></div>
+		</div>
+
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+	</nav>
+</div><script>feather.replace()</script>
+</body>
+</html>
