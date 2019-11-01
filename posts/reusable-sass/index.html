@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Reusable Sass - Hugh Sato</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Reusable Sass" />
+<meta property="og:description" content="Sassy refactor: making reusable sass components We looked at semantic names and roles of HTML elements, and creating better naming conventions to better visualize the relationship of css classes to their HTML elements using BEM. Now, we dive into refactoring the CSS/Sass world, in order to create better structure and maintainability.
+This week, I dove into refactoring different elements of my doggy daycare example project website. For this, I look closer at how to organize my stylistic choices, separate them from layouts, typography, tokens, and look at how sass deals with mixins, placeholder selectors, and more advanced sass concepts." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://proxycase.github.io/posts/reusable-sass/" />
+<meta property="article:published_time" content="2019-11-01T11:49:28-05:00" />
+<meta property="article:modified_time" content="2019-11-01T11:49:28-05:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Reusable Sass"/>
+<meta name="twitter:description" content="Sassy refactor: making reusable sass components We looked at semantic names and roles of HTML elements, and creating better naming conventions to better visualize the relationship of css classes to their HTML elements using BEM. Now, we dive into refactoring the CSS/Sass world, in order to create better structure and maintainability.
+This week, I dove into refactoring different elements of my doggy daycare example project website. For this, I look closer at how to organize my stylistic choices, separate them from layouts, typography, tokens, and look at how sass deals with mixins, placeholder selectors, and more advanced sass concepts."/>
+<link rel="stylesheet" href="https://use.typekit.net/qfb6lpj.css">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="https://proxycase.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://proxycase.github.io/css/main.css" /><script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script><script src="https://proxycase.github.io/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<div class="hugh-logo">
+  <svg xmlns="http://www.w3.org/2000/svg" width="103" height="69" viewBox="0 0 103 69">
+    <defs>
+      <linearGradient id="logo-a" x1="19.804%" x2="56.376%" y1="10.515%" y2="97.587%">
+        <stop offset="0%" stop-color="#FCEA52"/>
+        <stop offset="100%" stop-color="#FFE400"/>
+      </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(-1 -6)">
+      <path fill="url(#logo-a)" d="M48.8021475,73.304497 C67.6529044,73.3116215 81.181137,66.961948 81.1740263,48.1907402 C81.1704642,38.798596 78.5357485,24.1985987 72.3490935,18.0445779 C66.1710546,11.8991278 51.3300036,8.69752317 41.9111931,8.69395828 C23.0604362,8.68682991 14.9392014,26.6377732 14.945741,43.9051054 C14.9522886,61.1724376 29.9513905,73.2973605 48.8021475,73.304497 Z" transform="rotate(-105 48.06 41)"/>
+      <g fill="#494949" transform="translate(0 6)">
+        <path d="M37.4252662,47.5346782 C38.1955369,47.5393479 38.8886442,46.8483479 39.5045882,45.4616783 C38.8716766,44.0674121 38.1700855,43.367923 37.3998148,43.3632111 C36.2444088,43.3562225 35.3134647,44.2843256 35.3204533,45.4362269 C35.3275211,46.5881283 36.2698602,47.5276263 37.4252662,47.5346782 Z" transform="rotate(-38 37.413 45.449)"/>
+        <path fill-rule="nonzero" d="M56.0643221,19.7539947 L40.4799566,43.7002912 C40.0441962,44.4173737 40.6362311,45.8458291 41.3721279,46.2704486 C42.1080247,46.6950681 43.8787682,46.4921849 44.3145286,45.7751025 L58.0064052,20.8104761 C58.4421656,20.0933936 58.742302,19.3218819 58.0064052,18.8972625 C57.2705085,18.472643 56.5000825,19.0369123 56.0643221,19.7539947 Z"/>
+        <path d="M53.2413105,33.7844718 C49.1911039,31.9985212 64.535692,28.9984606 76.2738078,30.1621426 C88.0119235,31.3258245 104.815853,35.4583164 103.199512,41.4388902 C101.583171,47.419464 57.2915171,35.5704224 53.2413105,33.7844718 Z" transform="rotate(-5 77.943 36.506)"/>
+        <path d="M4.01702029,17.1062011 C1.38351828,15.3232825 16.1449238,12.8612178 24.6381714,13.5674482 C33.131419,14.2736785 50.2439181,19.0215596 48.8271468,25.0280863 C47.4103755,31.034613 6.6505223,18.8891196 4.01702029,17.1062011 Z" transform="scale(-1 1) rotate(-42 0 88.599)"/>
+        <path d="M48.0439205,43.3635888 C49.3340233,40.4134815 61.2340795,40.4108902 71.933921,43.3583866 C82.6337626,46.3058831 92.131697,48.3962128 92.130871,52.1425619 C92.1300449,55.888911 87.9256222,58.4634489 73.2318072,53.9132686 C58.5379921,49.3630884 46.7538177,46.3136961 48.0439205,43.3635888 Z" transform="rotate(1 70.039 48.745)"/>
+        <path d="M0.904933657,27.5272341 C2.05512589,24.7393463 12.8204795,24.8018691 22.5169579,27.652752 C32.2134363,30.5036349 40.8177016,32.5358752 40.8384966,36.0851624 C40.859123,39.6344496 37.0703444,42.0506098 23.751544,37.6595358 C10.4327436,33.2684617 -0.24525858,30.3151218 0.904933657,27.5272341 Z" transform="scale(-1 1) rotate(-34 0 100.88)"/>
+        <path d="M44.6648852,52.0384895 C45.7527188,52.0384895 46.6345821,50.9739623 46.6345821,49.6608013 C46.6345821,48.7853607 45.9780165,47.992798 44.6648852,47.2831132 C43.3517538,47.992798 42.6951882,48.7853607 42.6951882,49.6608013 C42.6951882,50.9739623 43.5770516,52.0384895 44.6648852,52.0384895 Z"/>
+      </g>
+    </g>
+  </svg>
+</div>
+	<h1 class="site-title">Hugh Sato</h1>
+	<div class="site-description"><h2>Writings of an 8L Design Apprentice</h2><nav class="nav social">
+			<ul class="flat"><a href="https://github.com/proxycase" title="Github"><i data-feather="github"></i></a><a href="https://twitter.com/hughsato" title="Twitter"><i data-feather="twitter"></i></a><a href="https://www.instagram.com/abalonespider/" title="Instagram"><i data-feather="instagram"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">Reusable Sass</h1>
+			<div class="meta">Posted at &mdash; Nov 1, 2019</div>
+		</div>
+
+		<div class="markdown">
+			<h1 id="sassy-refactor-making-reusable-sass-components">Sassy refactor: making reusable sass components</h1>
+
+<p>We looked at semantic names and roles of HTML elements, and creating better naming conventions to better visualize the relationship of css classes to their HTML elements using BEM. Now, we dive into refactoring the CSS/Sass world, in order to create better structure and maintainability.</p>
+
+<p>This week, I dove into refactoring different elements of my doggy daycare example project website. For this, I look closer at how to organize my stylistic choices, separate them from layouts, typography, tokens, and look at how sass deals with mixins, placeholder selectors, and more advanced sass concepts. How do we break down this giant boat of style and layout into individually addressable, modular parts, so we can modify and maintain our projects more quickly, and make collaboration easier?</p>
+
+<p>There are a lot of things to pay attention to, and many concepts are a bit more of a style-choice than a hard-set rule, which make researching this stuff really difficult because everyone seems to have a slightly different take. So the general idea seems to be: <strong>As long as you have some system that is deliberate, consistent, and increases maintainability by you or other coders, you're headed in the right direction.</strong></p>
+
+<p>I ended up studying a variety of these styles in order to understand their benefits and pitfalls, and to also figure out what kinds of problems these frameworks were made to solve.</p>
+
+<p><strong>Lets steer the ship towards these things:</strong></p>
+
+<ul>
+<li>Mixes – combining classes in the html</li>
+<li>Namespacing CSS for clarity</li>
+<li>Structuring styles in scalable, modular frameworks</li>
+<li>Modular programming and keeping it DRY
+
+<ul>
+<li>Using variables</li>
+<li>Using mixins and placeholder selectors</li>
+</ul></li>
+<li>Separation of concerns</li>
+<li>Performant CSS</li>
+</ul>
+
+<h2 id="the-basics-mixes">The Basics: Mixes</h2>
+
+<ul>
+<li>Mixes are common practice, which is mixing css classes together on a single HTML element to combine, override, or modify existing styles. In practice, it looks like this:</li>
+</ul>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;div class=<span style="color:#a31515">&#34;menu menu_theme_islands&#34;</span>&gt;...&lt;/div&gt;</code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#2b91af">menu</span> { 
+	<span style="color:#00f">display</span>: <span style="color:#00f">flex</span>;
+	<span style="color:#00f">flex-direction</span>: <span style="color:#00f">column</span>;
+	<span style="color:#00f">padding</span>: 2<span style="color:#2b91af">em</span>; 
+}
+.<span style="color:#2b91af">menu_theme_islands</span> {
+	<span style="color:#00f">background</span>: rgb(220, 110, 12);
+	<span style="color:#00f">color</span>: <span style="color:#00f">green</span>;
+}</code></pre></div>
+<p><a href="https://en.bem.info/methodology/naming-convention/">Example from: Naming convention / Methodology / BEM</a></p>
+
+<p>We &quot;mix&quot; the styles from different blocks to create a new, contextually different menu. Also note that in this case, I'm only extending the <code>.menu</code> class with layout choices, and <code>.menu_theme_islands</code> contains style (or &quot;skin&quot;) choices. By doing this, I'm separating the concerns of each class, which is a principle found in OOCSS (Object Oriented CSS), which is to separate the <code>structure</code> from the <code>skin</code>.</p>
+
+<h3 id="take-a-look-at-the-following-principles-from-oocss">Take a look at the following principles from OOCSS:</h3>
+
+<blockquote>
+<p><strong>Separate structure and skin</strong>: You should keep the structure and positioning in a base object and the visual features (like background or border) in extender clases. This way you'd never have to overwrite visual properties.</p>
+
+<p><strong>Separate container and content</strong>: Never mimic the structure of your HTML in CSS. In other words, don't refer to tags or IDs in your stylesheets. Instead, try to create and apply classes that describe the use of the tag in question. And keep nested classes to a bare minimum.</p>
+
+<p>–– Nicole Sullivan</p>
+</blockquote>
+
+<p>Now, let's say a few months from now, the client returns with some ideas about how to &quot;spruce&quot; up the design to match some rebranding effort. By looking at the style names, it's not immediately clear which elements deal with layout, and which deal with type, or color. Well, thankfully we can help prevent future confusion, with a little namespacing.</p>
+
+<h2 id="namespacing">Namespacing</h2>
+
+<p>Namespacing means using class name prefixes that allow you to quickly identify where a class might live in your files, what role it plays in styling your HTML elements, and what kind of reach, or how many elements it affects.</p>
+
+<p>You may see something like:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#2b91af">c-feature</span> {}
+.<span style="color:#2b91af">l-feature__description</span> {}
+.<span style="color:#2b91af">is-active</span> {}
+.<span style="color:#2b91af">u-offset-shadow</span> {}</code></pre></div>
+<p>Namespacing really shines when used in combination with a css file structure, like ITCSS. These are organization methods that are designed so that you can create scalable, and modular CSS.</p>
+
+<ul>
+<li><strong>o-</strong>: Signify that something is an Object, and that it may be used in any number of unrelated contexts to the one you can currently see it in. Making modifications to these types of class could potentially have knock-on effects in a lot of other unrelated places. Tread carefully.</li>
+<li><strong>c-</strong>: Signify that something is a Component. This is a concrete, implementation-specific piece of UI. All of the changes you make to its styles should be detectable in the context you’re currently looking at. Modifying these styles should be safe and have no side effects.</li>
+<li><strong>u-</strong>: Signify that this class is a Utility class. It has a very specific role (often providing only one declaration) and should not be bound onto or changed. It can be reused and is not tied to any specific piece of UI. You will probably recognise this namespace from libraries and methodologies like  <a href="https://suitcss.github.io/">SUIT</a> .</li>
+<li>And more:  <strong>t-, s- is-, has- _ js-  qa-</strong>  at: <a href="https://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/">More Transparent UI Code with Namespaces – CSS Wizardry – CSS Architecture, Web Performance Optimisation, and more, by Harry Roberts</a></li>
+</ul>
+
+<p>Here are a couple of the most popular systems, and how some of them are organized or structured below.</p>
+
+<ul>
+<li>Object Oriented CSS - OOCSS</li>
+<li>Scalable and Modular Architecture for CSS - SMACSS</li>
+<li>Inverted Triangle CSS - ITCSS</li>
+<li>Reasonable System for CSS - RSCSS</li>
+<li>BEM</li>
+</ul>
+
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>SMACSS</strong></td>
+<td><strong>ITCSS</strong></td>
+<td><strong>OOCSS</strong></td>
+</tr>
+
+<tr>
+<td>Base</td>
+<td>Settings</td>
+<td>Layout</td>
+</tr>
+
+<tr>
+<td>Layout l-</td>
+<td>Tools</td>
+<td>Skin</td>
+</tr>
+
+<tr>
+<td>Module</td>
+<td>Generic</td>
+<td>Containers</td>
+</tr>
+
+<tr>
+<td>State, is- has-</td>
+<td>Objects, o-</td>
+<td>Components</td>
+</tr>
+
+<tr>
+<td>Theme</td>
+<td>Components, c-</td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td>Utilities</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="rscss-vs-bem">RSCSS vs BEM</h3>
+
+<p>Note that rscss and BEM are really not frameworks for css file organization as much as the others, and are philosophies for naming conventions, and how classes interact with each other.</p>
+
+<p><strong>RSCSS</strong> deals with classes and their related elements by using child selectors, while limiting nesting to only one level deep.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#2b91af">search-form</span> {
+	<span style="color:#00f">position</span>: <span style="color:#00f">relative</span>;
+
+	<span style="">&gt;</span> <span style="">.field</span> <span style="">{</span>
+		<span style="color:#00f">font-size</span>: 1.2<span style="color:#2b91af">em</span>;
+		<span style="color:#00f">line-height</span>: 1.75<span style="color:#2b91af">em</span>;
+	}
+
+	&gt; .<span style="color:#2b91af">button</span> {
+		<span style="color:#00f">font-size</span>: 1.6<span style="color:#2b91af">em</span>;
+		<span style="color:#00f">line-height</span>: 2<span style="color:#2b91af">em</span>;
+	}
+<span style="">}</span></code></pre></div>
+<p>HTML:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;input class=<span style="color:#a31515">&#34;search-form button&#34;</span>&gt;</code></pre></div>
+<p>More detail on rscss <a href="https://rscss.io/elements.html">here</a></p>
+
+<p><strong>BEM</strong> deals with classes by separating each element to its own class, but by using the ampersand in sass/less, it can create a similar structure with more specific names.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#2b91af">search-form</span> {
+	<span style="color:#00f">position</span>: <span style="color:#00f">relative</span>;
+
+	<span style="">&amp;__field</span> <span style="">{</span>
+		<span style="color:#00f">font-size</span>: 1.2<span style="color:#2b91af">em</span>;
+		<span style="color:#00f">line-height</span>: 1.75<span style="color:#2b91af">em</span>;
+	}
+	
+	&amp;__button {
+		<span style="color:#00f">font-size</span>: 1.6<span style="color:#2b91af">em</span>;
+		<span style="color:#00f">line-height</span>: 2<span style="color:#2b91af">em</span>;
+	}
+<span style="">}</span></code></pre></div>
+<p>HTML:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;input class=<span style="color:#a31515">&#34;search-form__button&#34;</span>&gt;</code></pre></div>
+<h2 id="fighting-the-nest">Fighting the nest</h2>
+
+<p>Back when I first started writing any css code, I would be editing some existing theme, applied to a Xanga or Blogger CMS, which in hindsight, taught me a lot about web styling, but didn't teach me good practices. I would daisy-chain css styles in order to get the specific item looking the way I wanted, and more than often, would apply inline styles. <strong>The natural instinct was to nest css, to mirror the structure of the html.</strong></p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;div class=<span style="color:#a31515">&#34;header&#34;</span>&gt;
+	&lt;div class=<span style="color:#a31515">&#34;navigation&#34;</span>&gt;
+		&lt;div class=<span style="color:#a31515">&#34;buttons-container&#34;</span>&gt;
+			&lt;ul class=<span style="color:#a31515">&#34;button-list&#34;</span>&gt;
+				&lt;li class=<span style="color:#a31515">&#34;button&#34;</span>&gt;
+					...</code></pre></div><div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">header {
+	<span style="">navigation</span> <span style="">{</span>
+		<span style="">buttons-container</span> <span style="">{</span>
+			<span style="">button-list</span> <span style="">{</span>
+				<span style="">li</span> <span style="">{</span>
+					<span style="">...</span></code></pre></div>
+<p>There are some obvious problems with this, particularly regarding scalability and maintainability. You might search your css file for where your navigation button is styled, but might end up with a variety of different places where different buttons are styled with the same name. For this reason, one should also avoid doing class selectors especially when going in that deep. Selecting body and html elements is okay because they only happen once, but selecting li's to do context-specific styling beyond normalization can get unwieldy and difficult to maintain later on.</p>
+
+<p>Maintainability means being able to change the color scheme of all of your navigational components on the fly without having to search too much, and knowing exactly where you need to make those changes. Further, using a system that uses sass tokens (variables) and (mostly) unnested, single-target selectors, you can increase the reusability of a selector.</p>
+
+<h2 id="variables">Variables</h2>
+
+<p>Take advantage of sass variables, which look like this:
+<code>$color-primary: rgb(200, 103, 23, 255)</code></p>
+
+<p>and are implemented like so:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#2b91af">button--primary</span> {
+	<span style="color:#00f">color</span>: <span style="">$</span><span style="color:#00f">color</span>-primary;
+}</code></pre></div>
+<p>Easy cheezy lemon-squeezy. Gotta change the primary color with the new branding coming in? You got one place to change that color, everywhere.</p>
+
+<h2 id="extending-placeholder-selectors-and-including-mixins">@extending placeholder selectors, and @including mixins</h2>
+
+<p>There are two specific approaches to creating chunks of css for reusablility. Mixins are the more common, and &quot;best practice&quot; way of creating reusable code:</p>
+
+<h3 id="mixins">Mixins</h3>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">// full width on mobile, 33% width on tablet and desktop
+@<span style="color:#00f">mixin</span> third-to-full {
+	width: 100%;
+	
+	@<span style="color:#00f">media</span> $tablet-up {
+		width: 33%;
+	}
+}</code></pre></div>
+<h3 id="placeholder-selectors">Placeholder Selectors</h3>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">%button {
+	<span style="color:#00f">padding</span>: 3<span style="color:#2b91af">em</span>;
+	<span style="color:#00f">border-radius</span>: 1<span style="color:#2b91af">em</span>;
+}
+
+%background-secondary {
+	<span style="">color.scale($color-secondary,</span> <span style="">$</span>lightness: 30<span style="color:#2b91af">%</span>); <span style="">//</span> <span style="">lightens</span> <span style="">the</span> <span style="">color</span> <span style="">by</span> <span style="">30%</span>
+}
+
+// then we combine them here
+.<span style="color:#2b91af">btn</span> {
+	<span style="">@extend</span> <span style="">%button</span>;
+	<span style="">@extend</span> <span style="">%background-secondary</span>;
+}</code></pre></div>
+<p>There are a number of benefits and also trade-offs to doing placeholder selectors, namely that:</p>
+
+<ul>
+<li>Placeholder selectors don't &quot;print&quot; (aka compile to the final style.css file) if they aren't used, meaning that if you don't end up using them, they won't junk up your final product with &quot;dead&quot; code.</li>
+<li>Placeholder selectors can't compute stuff for you by passing in variables like mixins.</li>
+<li>By default, use mixins when possible, and if you aren't sure you're going to use the selector, use a placeholder.</li>
+</ul>
+
+<p>The major difference is how they compile to css:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">// using mixins imports the style into the target css
+.<span style="color:#2b91af">card</span> {
+	<span style="color:#00f">width</span>: 100<span style="color:#2b91af">%</span>
+
+	@media <span style="">$</span>tablet-up <span style="">{</span>
+		<span style="color:#00f">width</span>: 33<span style="color:#2b91af">%</span>;
+	}
+<span style="">}</span>
+
+// using placeholders creates an association between the selectors that use it by creating a multi-selector
+.<span style="color:#2b91af">card</span>, .<span style="color:#2b91af">side-bar</span>, .<span style="color:#2b91af">table-of-contents</span> {
+	<span style="color:#00f">width</span>: 100<span style="color:#2b91af">%</span>;
+
+	<span style="">@media</span> <span style="">$tablet-up</span> <span style="">{</span>
+		<span style="color:#00f">width</span>: 33<span style="color:#2b91af">%</span>;
+	}
+<span style="">}</span></code></pre></div>
+<h2 id="considering-solid">Considering SOLID</h2>
+
+<p>That's what Gen Z'ers are saying right? Along with... &quot;that's mint!&quot; (I don't know, I was scrolling through Tik Tok the other day don't judge me).</p>
+
+<p>To borrow some philosophy from the SOLID principles used in object oriented programming, we have this concept of single-responsibility, which is that every class (in our case a selector), should tackle only a single part of a program, and that it should fully encapsulate that single responsibility.</p>
+
+<p>Further, that class should only have one reason to change, which means separating your selectors between layout, cosmetic, and typographic can isolate each selector to have a <em>single responsibility</em> over your style.</p>
+
+<p>Take a look at the premise of Object Oriented CSS (OOCSS), which separates the role of the selector like so:</p>
+
+<ul>
+<li>Style (&quot;Skin&quot;) vs Layout (&quot;Structure&quot;)</li>
+<li>Container vs Component</li>
+</ul>
+
+<p>There's a good article breaking that down here: <a href="https://www.keycdn.com/blog/oocss">OOCSS - The Future of Writing CSS - KeyCDN</a></p>
+
+<h3 id="great-so-where-do-i-put-this-in-to-practice">Great, so where do I put this in to practice?</h3>
+
+<p>Right, so something I'm still working on is trying to figure out where to make those separations apparent. Depending on the website/application, it could make sense to have it at the HTML level, like so:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;article class=<span style="color:#a31515">&#34;l-blog-post s-blog-post&#34;</span>&gt;</code></pre></div>
+<p>This doesn't feel right to me though, because while it is more visible at the HTML layer what will happen to the element, it runs the risk of creating long lists of classes attached to everything. I suppose if you agree upon a structure that limits the number of classes anything can have to say, up to four, then you can prevent too much clutter.</p>
+
+<p>I'd rather just be able to dive to the exact selector and then find what styles it extends its variables from. It does lead to more CSS, but CSS can be cached and minified.</p>
+
+<h4 id="the-html">The HTML</h4>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;article class=<span style="color:#a31515">&#34;c-blog-post&#34;</span>&gt;</code></pre></div>
+<h4 id="the-css">The CSS</h4>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">// in main.<span style="color:#2b91af">scss</span>
+.<span style="color:#2b91af">c-blog-post</span> {
+	<span style="">@extend</span> <span style="">%l-spacing--post-card</span>; <span style="">//</span> <span style="">the</span> <span style="">l-</span> <span style="">namespace</span> <span style="">tells</span> <span style="">me</span> <span style="">that</span> <span style="">this</span> <span style="">lives</span> <span style="">in</span> <span style="">layout.scss</span>
+	<span style="color:#00f">background</span>: <span style="">$</span><span style="color:#00f">background</span>-card-secondary;
+	<span style="color:#00f">border-radius</span>: <span style="">$</span><span style="color:#00f">border</span>-radius-small;
+}
+
+// In layout.<span style="color:#2b91af">scss</span>
+.<span style="color:#2b91af">l-spacing--post-card</span> {
+	<span style="color:#00f">padding</span>: <span style="">$</span>spacing-x-large; <span style="">//</span> <span style="">sass</span> <span style="">variable</span> <span style="">in</span> <span style="">tokens.scss</span>
+	<span style="color:#00f">margin</span>: rem(18<span style="color:#2b91af">px</span>); <span style="">//</span> <span style="">mixin</span> <span style="">for</span> <span style="">calculating</span> <span style="">rem</span> <span style="">from</span> <span style="">px</span>
+}</code></pre></div>
+<p>Here's a more friendly diagram to look at how I'm thinking it through.</p>
+
+<p>[image:18F7FA72-1E80-402F-93F1-7A2D94A7471C-2458-0000A45BF07162FF/1-selector.png]</p>
+
+<p>Then to consider that in BEM, you use the modifier along with the base element, you can think of it as a sort of override class, like so:</p>
+
+<p>[image:2ECC5E37-5BA9-48D9-8F04-45A7A63EEF5E-2458-0000A45BF1C1D6A8/2-selector--modifier.png]</p>
+
+<p>What is nice about the BEM method is that it's easy to see what is actually a modification on a base style in the HTML, so if you know that there's something supposed to be special or unique to that version of a button, form element, that is indicated at the HTML level.</p>
+
+<p>This leads me to the other SOLID principle that pairs nicely with CSS structuring.</p>
+
+<h2 id="open--closed-fights-the-nest">Open / Closed fights the nest</h2>
+
+<p>Open/closed principle states that classes (and modules, functions, etc) should be open for extension, but closed for modification. It's a bit more complex in the real object oriented coding world, but in our case, this fits nicely with the BEM mechanism for creating modifiers, instead of nesting within existing base styles. The thing about this principle is that at first, it doesn't seem terrible to add additional selectors to a single class as you go and nest, and with small projects, this might be okay. But when you scale, you run into the problems that rscss states:</p>
+
+<ul>
+<li>&quot;What does this class mean?&quot;</li>
+<li>&quot;Is this class still being used?&quot;</li>
+<li>&quot;If I make a new class <code>green</code>, will there be a clash?&quot;
+<a href="https://rscss.io/">rscss</a></li>
+</ul>
+
+<p>Here's what that might look like before we apply this principle:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">// some base style
+.<span style="color:#2b91af">btn</span> {
+	<span style="">@extend</span> <span style="">%button-structure</span>;
+	<span style="">@extend</span> <span style="">%button-skin</span>;
+}</code></pre></div>
+<p>Which, if we modified might look like this, and the html element would have to have both <code>.btn</code> and <code>.btn-primary</code> in order to get the specified styling.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">// some base style
+.<span style="color:#2b91af">btn</span> {
+	<span style="">@extend</span> <span style="">%button-structure</span>;
+	<span style="">@extend</span> <span style="">%button-skin</span>;
+
+	<span style="">.btn-primary</span> <span style="">{</span>
+		<span style="color:#00f">background-color</span>: <span style="">$</span><span style="color:#00f">color</span>-primary;
+	}
+<span style="">}</span></code></pre></div>
+<p>Then using BEM and open/closed principle, we &quot;close&quot; the <code>.btn</code> from changes for the purpose of a modifier, and create a separate class that extends the base, and puts the modifications in that selector instead.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#2b91af">btn</span> {
+	<span style="">@extend</span> <span style="">%button-structure</span>;
+	<span style="">@extend</span> <span style="">%button-skin</span>;
+}
+
+.<span style="color:#2b91af">btn--primary</span> {
+	<span style="">@extend</span> <span style="">.btn</span>;
+	<span style="">//</span> <span style="">modifications</span> <span style="">here</span>
+}</code></pre></div>
+<h2 id="defining-a-process">Defining a Process</h2>
+
+<ol>
+<li>Use BEM and semantic html when building the site from scratch. Start with a blank page with only a couple of individual components, like buttons, typography, etc. Develop the most reusable components first, before working on layout.</li>
+<li>To adjust and modify styles as needed with selectors that either modify existing blocks (using block--modifier) or extend some defined mixins and placeholder selectors.</li>
+<li>Refactor constantly. After more of the work has been done, you can start to see where you've repeated yourself.</li>
+<li>Figure out if you can consolidate those into their own mixins or basic blocks.</li>
+<li>Carefully look at every HTML element with mixes of different selectors, and consider whether it will be maintainable and easily modified later.</li>
+</ol>
+
+<p>Excerpt From: Jonathan Snook. “Scalable and Modular Architecture for CSS.” Apple Books.</p>
+
+<p>Resources:</p>
+
+<p><a href="https://jtway.co/how-to-have-clean-css-structure-with-rscss-itcss-2afc2e309126">How to have a clean CSS structure with RSCSS/ITCSS - JTWay by JetThoughts</a></p>
+
+<p><a href="http://thesassway.com/intermediate/using-object-oriented-css-with-sass">Using object oriented css with sass</a></p>
+
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference">CSS Properties Reference - CSS: Cascading Style Sheets | MDN</a></p>
+
+<p><a href="https://www.keycdn.com/blog/oocss">OOCSS - The Future of Writing CSS - KeyCDN</a></p>
+
+<style type="text/css">
+td {
+  width: 33%;
+  text-align:center;
+}
+table {
+  width:100%;
+  margin-bottom: 20px;
+}
+th {
+  background:AliceBlue;
+}
+</style>
+
+		</div>
+
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+	</nav>
+</div><script>feather.replace()</script>
+</body>
+</html>
