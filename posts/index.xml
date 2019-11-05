@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Hugh Sato</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 Nov 2019 11:49:28 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 04 Nov 2019 14:15:12 -0600</lastBuildDate>
     
 	<atom:link href="https://proxycase.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Intro to CSS Animations</title>
+      <link>https://proxycase.github.io/posts/animations/</link>
+      <pubDate>Mon, 04 Nov 2019 14:15:12 -0600</pubDate>
+      
+      <guid>https://proxycase.github.io/posts/animations/</guid>
+      <description>Animation is all about the control of objects over time. In this post, we&#39;ll explore control over shapes and timeline with using css. If there&#39;s enough time, we&#39;ll also look at some Javascript libraries and how that can help us make more complex visualizations, as well as introduce some interactivity.
+ Quick note on transitions To make something animate from one state to the next, you might not need something particularly fancy.</description>
+    </item>
     
     <item>
       <title>Reusable Sass</title>
