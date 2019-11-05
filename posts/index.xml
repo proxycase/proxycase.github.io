@@ -22,12 +22,12 @@
     </item>
     
     <item>
-      <title>Reusable Sass</title>
+      <title>Sassy refactor: making reusable sass components</title>
       <link>https://proxycase.github.io/posts/reusable-sass/</link>
       <pubDate>Fri, 01 Nov 2019 11:49:28 -0500</pubDate>
       
       <guid>https://proxycase.github.io/posts/reusable-sass/</guid>
-      <description>Sassy refactor: making reusable sass components We looked at semantic names and roles of HTML elements, and creating better naming conventions to better visualize the relationship of css classes to their HTML elements using BEM. Now, we dive into refactoring the CSS/Sass world, in order to create better structure and maintainability.
+      <description>In the previous post, I looked at semantic names and roles of HTML elements, and creating better naming conventions to better visualize the relationship of css classes to their HTML elements using BEM. Now, I dive into refactoring the CSS/Sass world, in order to create better structure and maintainability.
 This week, I dove into refactoring different elements of my doggy daycare example project website. For this, I look closer at how to organize my stylistic choices, separate them from layouts, typography, tokens, and look at how sass deals with mixins, placeholder selectors, and more advanced sass concepts.</description>
     </item>
     
