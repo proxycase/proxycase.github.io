@@ -1,12 +1,15 @@
 let backdrop
 let dragonfly
+let header
 
 window.onload = () => {
   backdrop = document.querySelector('.logo__backdrop')
   dragonfly = document.querySelector('.logo__dragonfly')
+  header = document.querySelector('.reveal__stagger')
 
   // revealLogo()
   revealLogo()
+  revealHeader()
 }
 
 function revealLogo() {
@@ -14,6 +17,6 @@ function revealLogo() {
   dragonfly.classList.add('logo__dragonfly--reveal')
 }
 
-function resetLogo() {
-  backdrop.classList.remove('logo__backdrop--scale')
+function revealHeader() {
+  header.classList.add('reveal__stagger--reveal')
 }

@@ -1,27 +1,26 @@
-$logo_duration: 1s;
+$logo_duration: 0.7s;
 $animation-count: 1;
-
-.logo__dragonfly {
-  opacity: 0%;
-  z-index: 1000;
-
-  &--reveal {
-    transition: transform opacity $logo_duration;
-    animation: $logo_duration ease-out $logo_duration $animation-count normal forwards running reveal-dragonfly;
-  }
-}
 
 .logo__backdrop {
   opacity: 0%;
 
   &--reveal {
-    transition: transform opacity $logo_duration;
     transform-origin: center center;
 
     // @keyframes duration | timing-function | delay | iteration-count | direction | fill-mode | play-state | name
     animation: $logo_duration ease-out 0s $animation-count normal forwards running reveal-logo;
   }
 }
+
+.logo__dragonfly {
+  opacity: 0%;
+  z-index: 1000;
+
+  &--reveal {
+    animation: $logo_duration ease-out $logo_duration $animation-count normal forwards running reveal-dragonfly;
+  }
+}
+
 
 @keyframes reveal-logo {
   0% {
@@ -46,3 +45,42 @@ $animation-count: 1;
     transform: translateY(0);
   }
 }
+
+// text below the logo
+
+$stagger-delay: 1s;
+
+.reveal__stagger {
+  opacity: 0%;
+
+  &--reveal {
+    // @keyframes duration | timing-function | delay | iteration-count | direction | fill-mode | play-state | name
+    animation-name: reveal-stagger;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-duration: $stagger-delay;
+
+    &:nth-child(2) {
+      animation-delay: $stagger-delay; 
+    }
+  }
+}
+
+// @for $i from 1 through 2 {
+//   .reveal__stagger--reveal:nth-child(#{$i}) {
+//     animation-delay:(#{$i*$stagger-delay}); 
+//   }
+// }
+
+@keyframes reveal-stagger {
+  0% {
+    opacity: 0%;
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 100%;
+    transform: translateY(0);
+  }
+}
+
