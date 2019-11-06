@@ -1,0 +1,17 @@
+code {
+  padding: .15em;
+	margin:.2em;
+	background: $color-accent-secondary;
+}
+
+.highlight code {
+	background: none;
+}
+
+kbd {
+	font-size: .8em;
+	color: $color-white;
+	background: $color-primary;
+	padding: .3em;
+	border-radius: 3px;
+}
