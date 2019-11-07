@@ -79,7 +79,7 @@ $stagger-delay: 1s;
 @keyframes reveal-stagger {
   0% {
     opacity: 0%;
-    transform: translateX(-10px);
+    transform: translateY(10px);
   }
 
   100% {

@@ -28,14 +28,6 @@ h5,
 h6 {
 	font-family: $font-family-headings;
 	line-height: $line-height-heading;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
 	color: $color-primary;
 }
 
@@ -87,8 +79,8 @@ blockquote {
 
 .title {
 	font-family: $font-family-headings;
-	font-size: 1.1em;
-	font-weight: 700;
+	font-size: $font-size-text-x-large;
+	font-weight: $font-weight-bold;
 	letter-spacing: .01em;
 }
 
