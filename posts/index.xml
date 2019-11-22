@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Hugh Sato</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Nov 2019 14:15:12 -0600</lastBuildDate>
+    <lastBuildDate>Fri, 22 Nov 2019 10:34:14 -0600</lastBuildDate>
     
 	<atom:link href="https://proxycase.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Design system differences between iOS and Android</title>
+      <link>https://proxycase.github.io/posts/android-vs-ios/</link>
+      <pubDate>Fri, 22 Nov 2019 10:34:14 -0600</pubDate>
+      
+      <guid>https://proxycase.github.io/posts/android-vs-ios/</guid>
+      <description>There&#39;s a lot of nuance in so many different areas considering the differences between both of these systems, so in this post, I will focus on just a couple of differences between the two design systems, rather than trying to accomplish a holistic coverage differentiating the two.
+Themes &amp;amp; Principles There are a good number of similarities and a few key distinguishing elements between iOS and Android platforms. The similarities come from iterations over graphic and interaction design patterns as the web app and native app ecosystems mature.</description>
+    </item>
     
     <item>
       <title>Intro to CSS Animations</title>
