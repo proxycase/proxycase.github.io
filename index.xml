@@ -6,10 +6,20 @@
     <description>Recent content on Hugh Sato</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Nov 2019 10:34:14 -0600</lastBuildDate>
+    <lastBuildDate>Tue, 26 Nov 2019 09:56:35 -0600</lastBuildDate>
     
 	<atom:link href="https://proxycase.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>React Component Development</title>
+      <link>https://proxycase.github.io/posts/react-component-dev/</link>
+      <pubDate>Tue, 26 Nov 2019 09:56:35 -0600</pubDate>
+      
+      <guid>https://proxycase.github.io/posts/react-component-dev/</guid>
+      <description>This week, I paired with Kevin to learn how React was being used to build the front-end for one of 8th Light&amp;rsquo;s clients. After learning how this project was structured, from using React with Typescript, and Storyboard, he gave me this little component to try out and build from an empty React environment.
+After going through the basic React tutorial, I had some understanding of how components are structured, pass values to each other, and how to create stateless functions, as well as classes.</description>
+    </item>
     
     <item>
       <title>Design system differences between iOS and Android</title>

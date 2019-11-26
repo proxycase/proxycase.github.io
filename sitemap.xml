@@ -3,17 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://proxycase.github.io/posts/android-vs-ios/</loc>
-    <lastmod>2019-11-22T10:34:14-06:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://proxycase.github.io/</loc>
-    <lastmod>2019-11-22T10:34:14-06:00</lastmod>
+    <lastmod>2019-11-26T09:56:35-06:00</lastmod>
   </url>
   
   <url>
     <loc>https://proxycase.github.io/posts/</loc>
+    <lastmod>2019-11-26T09:56:35-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://proxycase.github.io/posts/react-component-dev/</loc>
+    <lastmod>2019-11-26T09:56:35-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://proxycase.github.io/posts/android-vs-ios/</loc>
     <lastmod>2019-11-22T10:34:14-06:00</lastmod>
   </url>
   
