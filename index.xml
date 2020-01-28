@@ -6,10 +6,21 @@
     <description>Recent content on Hugh Sato</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 20 Dec 2019 15:51:12 -0600</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jan 2020 19:59:39 -0600</lastBuildDate>
     
 	<atom:link href="https://proxycase.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Simple tools for structuring understandable front-ends</title>
+      <link>https://proxycase.github.io/posts/structuring-frontends/</link>
+      <pubDate>Mon, 27 Jan 2020 19:59:39 -0600</pubDate>
+      
+      <guid>https://proxycase.github.io/posts/structuring-frontends/</guid>
+      <description>You either love or hate CSS.
+Probably because along with HTML, these languages seem to force you to enact poor development habits. You know better than to repeat yourself, but when you have four different components that share the same four css traits, there&amp;rsquo;s no way to reduce repetition, so you say you&amp;rsquo;ll &amp;ldquo;refactor it later&amp;rdquo; and it goes in your growing heap of tech debt.
+Isn&amp;rsquo;t there a better way?</description>
+    </item>
     
     <item>
       <title>Redesigning Olbrich Gardens</title>
