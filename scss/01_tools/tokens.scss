@@ -1,17 +1,16 @@
-
-$color-background: rgba(238, 250, 252, 0.541);
+$color-background: rgba(238, 250, 252, 0.2);
 $color-base-text: #222;
 
 $color-primary: rgb(39, 39, 39);
 $color-primary-hover: darken($color-primary, 10%);
 
-$color-secondary: #626E7A;
+$color-secondary: #626e7a;
 $color-secondary-hover: darken($color-secondary, 10%);
 
 $color-links: rgb(51, 82, 255);
 $color-links-hover: rgb(18, 47, 209);
 
-$color-white: #FFF;
+$color-white: #fff;
 $color-black: #070707;
 $color-black-hover: darken($color-black, 10%);
 $color-black-secondary: rgba($color-black, 0.5);
@@ -22,16 +21,16 @@ $color-accent-hover: darken($color-accent, 10%);
 
 $color-accent-secondary: rgb(220, 238, 255);
 
-$color-success: #58966B;
+$color-success: #58966b;
 $color-success-hover: darken($color-success, 10%);
-$color-error: #C81905;
+$color-error: #c81905;
 $color-error-hover: darken($color-error, 10%);
 
 // Fonts
 
-$font-family: mr-eaves-sans, 'Helvetica Neue', sans-serif;
+$font-family: mr-eaves-sans, "Helvetica Neue", sans-serif;
 $font-family-headings: williams-caslon-text, serif;
-$font-family-monospace: 'Courier New', Courier, monospace;
+$font-family-monospace: "Courier New", Courier, monospace;
 $font-weight-light: 300;
 $font-weight-regular: 400;
 $font-weight-semibold: 600;

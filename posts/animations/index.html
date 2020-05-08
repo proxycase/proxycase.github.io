@@ -7,7 +7,7 @@
 
 	
 
-<link rel="stylesheet" href="https://proxycase.github.io/scss/styles.min.8b46ca75deda51e118a99f3498b142657930fa9c9af9d370d449a5e57af2e994.css" />
+<link rel="stylesheet" href="https://proxycase.github.io/scss/styles.min.3ac5c67badd550222e3e6c784c7d16fb85f042a8bb27e0b5f833ed48030d1555.css" />
 <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script><script src="https://proxycase.github.io/js/animate.js"></script>
 </head>
 
@@ -33,7 +33,7 @@
 </div>
 	<div class="reveal__stagger">
 		<h1 class="site-title">Hugh Sato</h1>
-		<div class="site-description"><h2>Writings of an 8L Design Apprentice</h2><nav class="nav social c-social-nav">
+		<div class="site-description"><h2>Design &amp; Front-end Thinky-Thoughts</h2><nav class="nav social c-social-nav">
 				<ul class="flat"><a href="https://github.com/proxycase" title="Github"><i data-feather="github"></i></a><a href="https://twitter.com/hughsato" title="Twitter"><i data-feather="twitter"></i></a><a href="https://www.instagram.com/abalonespider/" title="Instagram"><i data-feather="instagram"></i></a></ul>
 			</nav>
 		</div>
@@ -263,7 +263,7 @@
 <p>By default, if an animation is simply applied to an element from the get-go, the animation will start as soon as the page loads. That also means that the element may start rotating or changing attributes before the content has loaded, causing it to appear as though it's animating from some in-between state. <strong>Method 1:</strong> If you want to hold off before the animation starts, you can set the <code>delay</code> parameter by seconds, or even milliseconds.</p>
 
 <p><strong>Method 2:</strong> apply the animating css property to an element when you need it to animate, with a javascript function.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">let watchme = document.getElementById(&#39;watchme&#39;)
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">let watchme = document.getElementById(&#39;watchme&#39;)
 
 watchme.className = &#39;slidein&#39;
 const listener = (e) =&gt; {
@@ -271,7 +271,7 @@ const listener = (e) =&gt; {
 }
 watchme.addEventListener(&#39;click&#39;, () =&gt;
   watchme.addEventListener(&#39;animationiteration&#39;, listener, false)
-)</pre></div>
+)</code></pre></div>
 <h2 id="benefits--limitations-of-css-vs-js-animations">Benefits &amp; Limitations of CSS vs JS Animations</h2>
 
 <p>CSS is good for keeping things simple, and performant. Most browsers and systems will do a good job at handling smooth CSS animations, and they're generally pretty easy to use. JS animations can get skippy or less smooth unless they're well made. By using CSS animations, the browser gets the control over optimizing performance and efficiency, so there are additional, albeit invisible benefits.</p>
@@ -285,11 +285,11 @@ watchme.addEventListener(&#39;click&#39;, () =&gt;
 <h2 id="using-shorthand">Using shorthand</h2>
 
 <p>By using the <code>animation:</code>  property, you can avoid typing the various parameter names, with the trade-off being that it can be a little less clear and easily editable by someone who doesn't immediately know the order of the parameters.</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">.example {
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">.example {
   animation: myAnim 2s 500ms 2 normal ease-in forwards;
-}</pre></div>
+}</code></pre></div>
 <p>And of course, this same shorthand line can be expanded to:</p>
-<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4">.example {
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">.example {
   animation-name: myAnim;
   animation-duration: 2s;
   animation-delay: 500ms;
@@ -297,7 +297,7 @@ watchme.addEventListener(&#39;click&#39;, () =&gt;
   animation-direction: normal;
   animation-timing-function: ease-in;
   animation-fill-mode: forwards;
-}</pre></div>
+}</code></pre></div>
 <p>Like many things, any problems with this can be helped with a little notation and good documentation, so in the interest of saving visual space and time, you can use the <code>animation</code> shorthand and provide a comment above to describe what it's supposed to do. Better yet, use a descriptive name for the animation too.</p>
 
 <p><em>Next up,</em> I'll post two examples from some animation experiments I've been toying around in codepen.</p>

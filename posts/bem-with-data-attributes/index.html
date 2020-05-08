@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title> - Hugh Sato</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.typekit.net/qfb6lpj.css">
+
+	
+
+<link rel="stylesheet" href="https://proxycase.github.io/scss/styles.min.3ac5c67badd550222e3e6c784c7d16fb85f042a8bb27e0b5f833ed48030d1555.css" />
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script><script src="https://proxycase.github.io/js/animate.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<div class="hugh-logo">
+  <svg class="logo__box" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103 69">
+    <defs>
+      <linearGradient id="hugh-logo-a" x1="19.804%" x2="56.376%" y1="10.515%" y2="97.587%">
+        <stop offset="0%" stop-color="#FCEA52" />
+        <stop offset="100%" stop-color="#FFE400" />
+      </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(-1.18 -5.056)">
+      <path class="logo__backdrop" fill="url(#hugh-logo-a)"
+        d="M48.9821858,72.8610703 C67.8329427,72.8681948 81.3611753,66.5185213 81.3540646,47.7473135 C81.3505025,38.3551693 78.7157868,23.7551719 72.5291317,17.6011511 C66.3510929,11.4557011 51.5100419,8.2540964 42.0912314,8.25053152 C23.2404745,8.24340315 15.1192397,26.1943464 15.1257793,43.4616786 C15.1323269,60.7290108 30.1314288,72.8539338 48.9821858,72.8610703 Z"
+        transform="rotate(-105 48.24 40.556)" />
+        <div class="logo__dragonfly"></div>
+      
+    </g>
+  </svg>
+</div>
+	<div class="reveal__stagger">
+		<h1 class="site-title">Hugh Sato</h1>
+		<div class="site-description"><h2>Design &amp; Front-end Thinky-Thoughts</h2><nav class="nav social c-social-nav">
+				<ul class="flat"><a href="https://github.com/proxycase" title="Github"><i data-feather="github"></i></a><a href="https://twitter.com/hughsato" title="Twitter"><i data-feather="twitter"></i></a><a href="https://www.instagram.com/abalonespider/" title="Instagram"><i data-feather="instagram"></i></a></ul>
+			</nav>
+		</div>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title"></h1>
+			<div class="meta">Posted at &mdash; Jan 1, 0001</div>
+		</div>
+
+		<div class="markdown">
+			<h1 id="block-element-modifier-data-attribute">Block Element ~Modifier~ Data-Attribute</h1>
+<p>BEM has been super useful to my practice, considering that naming variables in any situation has the potential to be fairly difficult. Making things simple and succinct increases readability, and thus, maintainability, but we&rsquo;re stuck in a place with CSS where we&rsquo;re trying to represent roles of HTML elements that are getting more complex every day. So, what to do?</p>
+<p>One major problem that I see with the Block Element Modifier has been that it is practically useless without the use of a pre-compiler like Sass to make your code more maintainable. Sure, we could write out each selector on their own line, but take a look below and see which one is easier to read?</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#2b91af">main-nav</span> {
+  <span style="">//</span> <span style="">things</span> <span style="">here</span>
+}
+
+.<span style="color:#2b91af">main-nav__header</span> {
+  <span style="">//</span> <span style="">things</span> <span style="">here</span>
+}
+
+.<span style="color:#2b91af">main-nav__header--dark-mode</span> {
+  <span style="">//</span> <span style="">repeat</span> <span style="">things</span> <span style="">in</span> <span style="">.main-nav</span> <span style="">but</span> <span style="">with</span> <span style="">overrides</span>
+}
+</code></pre></div><p>or in scss</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scss" data-lang="scss"><span style="color:#2b91af">.main-nav</span> {
+	<span style="color:#008000">// ...
+</span><span style="color:#008000"></span>
+<span style="color:#00f">&amp;</span>__header {
+	<span style="color:#008000">// ...
+</span><span style="color:#008000"></span>
+	<span style="color:#00f">&amp;</span>--dark-mode {
+	<span style="color:#00f">@extend</span> <span style="color:#00f">&amp;</span>__header;
+	<span style="color:#008000">// ...
+</span><span style="color:#008000"></span>	}
+}
+</code></pre></div><p>In Sass, or Less, these selectors can clearly and visually belong to their parents and we have a better correlation to how each element and modifier extends or overrides their parent. But there&rsquo;s a huge problem here too: These names get real long, and especially when you&rsquo;re having to change the state of a selector on the HTML on interaction. For example:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;small class=<span style="color:#a31515">&#34;modal__status--hidden&#34;</span>&gt;&lt;/small&gt;
+<span style="color:#008000">&lt;!-- on interaction, javascript swaps this to: --&gt;</span>
+&lt;small class=<span style="color:#a31515">&#34;modal__status--success&#34;</span>&gt;Success!&lt;/small&gt;
+</code></pre></div><p>The element selector is indicating its relationship to its parent <code>modal</code>, its own role <code>status</code>, and also handling its status <code>hidden</code> or <code>success</code>. But what if we separate that so the selector ONLY handles its parent and role, while something else handles the state of the element?</p>
+<p>Enter the data-attribute.</p>
+<p>While many interactive HTML elements have status like <code>::hover</code> and <code>::active</code> built in, not all elements are dedicated to handle those things.</p>
+<p>From the HTML WHATWG spec:</p>
+<blockquote>
+<p><a href="https://html.spec.whatwg.org/#custom-data-attribute">Custom data attributes</a> are intended to store custom data, state, annotations, and similar, private to the page or application, for which there are no more appropriate attributes or elements.</p>
+</blockquote>
+<p>Given this definition, we really shouldn&rsquo;t have to be altering the class itself for any modifier (and therefore state) to an element. Instead, consider the following approach:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;small class=<span style="color:#a31515">&#34;modal__status&#34;</span> data-state=<span style="color:#a31515">&#34;hidden&#34;</span>&gt;&lt;/small&gt;
+<span style="color:#008000">&lt;!-- on interaction, javascript swaps this to: --&gt;</span>
+&lt;small class=<span style="color:#a31515">&#34;modal__status&#34;</span> data-state=<span style="color:#a31515">&#34;success&#34;</span>&gt;Success!&lt;/small&gt;
+</code></pre></div><p>and the scss:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-scss" data-lang="scss"><span style="color:#2b91af">.modal</span> {
+	<span style="color:#00f">&amp;</span>__status {
+	<span style="color:#008000">// default styling
+</span><span style="color:#008000"></span>
+		<span style="color:#00f">&amp;</span>[data-state:<span style="color:#a31515">&#34;hidden&#34;</span>] {
+			visibility: none;
+		}
+
+		<span style="color:#00f">&amp;</span>[data-state:<span style="color:#a31515">&#34;success] {</span>
+			visibility: visible;
+			color: green;
+		}
+	}
+}
+</code></pre></div><p>By utilizing data attributes here, we separate our concerns. Our javascript shouldn&rsquo;t have to match css classes like <code>modal__status*</code> but simply query those that match <code>modal__status</code> and then adjust the <code>data-state</code> attribute based on user interaction.</p>
+<p>Finally, going back to the first point, we enable for those using pure css to create selectors that look more similar to the way that <code>:hover</code> attributes work:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css">.<span style="color:#2b91af">modal__status</span>[data-state: <span style="color:#a31515">&#34;hidden&#34;</span> ] {
+  <span style="color:#00f">visibility</span>: <span style="color:#00f">none</span>;
+}
+
+.<span style="color:#2b91af">primary-btn</span>::hover {
+  <span style="color:#00f">color</span>: #efefef;
+}
+</code></pre></div><p>Additionally, using data-attributes gives us access to more fuzzy selector matching, found here: <a href="https://css-tricks.com/almanac/selectors/a/attribute/#article-header-id-0">CSS-Tricks Seven Different Attribute Types</a></p>
+<p>I think this overall will make for more cleaner code, and make it also easier to test for those testing the front-end. Let me know what you think if you think you have a better way or think I&rsquo;m wrong!</p>
+
+		</div>
+
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+	</nav>
+</div><script>feather.replace()</script>
+</body>
+</html>

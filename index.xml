@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugh Sato</title>
@@ -6,7 +6,7 @@
     <description>Recent content on Hugh Sato</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Jan 2020 19:59:39 -0600</lastBuildDate>
+    <lastBuildDate>Fri, 19 Apr 2019 21:37:58 +0530</lastBuildDate>
     
 	<atom:link href="https://proxycase.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -224,6 +224,16 @@ Why used a defined design process? Real problems arise when products and service
       
       <guid>https://proxycase.github.io/about/</guid>
       <description>I am currently a Design Apprentice at 8th Light, working on mastering my visual, UI, and UX design chops. New media artist on the side, helping dancers interact in interesting ways with tech. At my previous job, I helped develop a library-based makerspace, providing public access to tools like laser cutters and (ugh of course) 3D printers. Design has been a common theme in my journey. I also have two cats whose names are Froley and Hobbes.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://proxycase.github.io/posts/bem-with-data-attributes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://proxycase.github.io/posts/bem-with-data-attributes/</guid>
+      <description>Block Element ~Modifier~ Data-Attribute BEM has been super useful to my practice, considering that naming variables in any situation has the potential to be fairly difficult. Making things simple and succinct increases readability, and thus, maintainability, but we&amp;rsquo;re stuck in a place with CSS where we&amp;rsquo;re trying to represent roles of HTML elements that are getting more complex every day. So, what to do?
+One major problem that I see with the Block Element Modifier has been that it is practically useless without the use of a pre-compiler like Sass to make your code more maintainable.</description>
     </item>
     
   </channel>

@@ -7,7 +7,7 @@
 
 	
 
-<link rel="stylesheet" href="https://proxycase.github.io/scss/styles.min.8b46ca75deda51e118a99f3498b142657930fa9c9af9d370d449a5e57af2e994.css" />
+<link rel="stylesheet" href="https://proxycase.github.io/scss/styles.min.3ac5c67badd550222e3e6c784c7d16fb85f042a8bb27e0b5f833ed48030d1555.css" />
 <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script><script src="https://proxycase.github.io/js/animate.js"></script>
 </head>
 
@@ -33,7 +33,7 @@
 </div>
 	<div class="reveal__stagger">
 		<h1 class="site-title">Hugh Sato</h1>
-		<div class="site-description"><h2>Writings of an 8L Design Apprentice</h2><nav class="nav social c-social-nav">
+		<div class="site-description"><h2>Design &amp; Front-end Thinky-Thoughts</h2><nav class="nav social c-social-nav">
 				<ul class="flat"><a href="https://github.com/proxycase" title="Github"><i data-feather="github"></i></a><a href="https://twitter.com/hughsato" title="Twitter"><i data-feather="twitter"></i></a><a href="https://www.instagram.com/abalonespider/" title="Instagram"><i data-feather="instagram"></i></a></ul>
 			</nav>
 		</div>
@@ -65,14 +65,9 @@
 		</div>
 
 		<div class="markdown">
-			
-
-<p>In the previous post, I wrote about the first two stages in the design process: Discover and Define.  I’ll be diving deeper into the second half of the process, where we take ideas that were distilled through the process, and are made into real designs, and real code.</p>
-
+			<p>In the previous post, I wrote about the first two stages in the design process: Discover and Define.  I’ll be diving deeper into the second half of the process, where we take ideas that were distilled through the process, and are made into real designs, and real code.</p>
 <p>Now that we’ve turned the Insights into “How might we’s,” there are a list of direct, actionable items to build out in our design program of choice. For this project, we used Sketch. Using existing knowledge of design patterns, as well as some competitive analysis and indirect competitors, we can build out the functions of the website.</p>
-
 <h3 id="here-they-are-again">Here they are again:</h3>
-
 <ul>
 <li>How might we help busy people easily book daycare with as little friction as possible?</li>
 <li>How much we ensure that regardless of age and breed, convey that all dogs are welcome?</li>
@@ -81,11 +76,8 @@
 <li>How might we help owners convey to workers of any considerations, walking needs, medications, etc.</li>
 <li>How might we encourage referrals, and increase visibility of the individual staff members?</li>
 </ul>
-
 <p>From there, we can break down a single HMW, and suggest features. In this way, we end up suggesting features that we are directed at bringing users the most amount of value.</p>
-
 <p>Besides these key features, there are other features that are either necessary by default to a website (eg. navigation) or features that come directly from the client (staff member pages, legal documentation, etc). We list them out here too:</p>
-
 <ul>
 <li>Navigation</li>
 <li>Login</li>
@@ -93,23 +85,14 @@
 <li>Legal Documents / Nondisclosure, advert, etc.</li>
 <li>Location Specific Information</li>
 </ul>
-
 <h2 id="develop">Develop</h2>
-
 <p>I began (as Refactoring UI suggests) to start by building features, not the whole page. By breaking down the elements, you can focus on making these parts great, and modular. Ultimately, when building for both mobile, tablet, and desktop, it’s great to have these individual components (as symbols in Sketch) in order to be able to easily adjust positioning and configure repeating elements without doing a ton of repetitive work. This, in conjunction with using the new Sketch Smart Layout feature, helped immensely in getting more work done in less time.</p>
-
-<p><img src="/img/MobileComponents.png" alt="Mobile Components" /></p>
-
+<p><img src="/img/MobileComponents.png" alt="Mobile Components"></p>
 <p>Some components (including an iteration that I chose not to pursue based on fellow designer feedback)</p>
-
 <p>Once these individual elements are built, they can be combined into a page view layout, giving you a holistic view of the entire website and how it might flow together. This process was iterative, so I went back and forth between component view, and page view in order to make sure everything was consistent.</p>
-
-<p><img src="/img/HolisticView.png" alt="Holistic View" /></p>
-
+<p><img src="/img/HolisticView.png" alt="Holistic View"></p>
 <h2 id="implementation">Implementation</h2>
-
 <p>At this point, I began to start implementing the individual pieces, converting the spacing, text size, and button styles into scss. What really helps is to create a style guide page, which contains your buttons, different text sizes, headers, fonts, and more – in order to build out the individual component classes, and replicate them everywhere on your website.</p>
-
 <p>There aren’t a whole ton of design changes that happen at this stage, but there are a couple, especially if you run up against time constraints (like I did) and some elements require more work (and javascript) than you can tackle in the given time. Ideally, by this time you should have had some user testing in order to work out kinks in the usability before implementing, so you don’t waste any time. Figuring out what doesn’t work after a product launches and making those fixes can be time consuming and costly depending on how well maintained the codebase is, and the scss/html component structure.</p>
 
 		</div>
