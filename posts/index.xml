@@ -6,10 +6,20 @@
     <description>Recent content in Posts on Hugh Sato</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Jan 2020 19:59:39 -0600</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2020 13:44:31 -0500</lastBuildDate>
     
 	<atom:link href="https://proxycase.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Block Element... Data-Attribute</title>
+      <link>https://proxycase.github.io/posts/bem-with-data-attributes/</link>
+      <pubDate>Fri, 08 May 2020 13:44:31 -0500</pubDate>
+      
+      <guid>https://proxycase.github.io/posts/bem-with-data-attributes/</guid>
+      <description>BEM (Block Element Modifier) naming has been super useful to my CSS practice, considering that naming variables in any situation has the potential to be fairly difficult. Keeping things simple and succinct increases readability, and thus, maintainability, but with BEM, we&amp;rsquo;re stuck in a place where we&amp;rsquo;re trying to represent the purpose of HTML elements that are complex and varied in nature. So, what to do?
+One major problem that I see with the Block Element Modifier has been that it is practically useless without the use of a pre-compiler like Sass to make your code more maintainable.</description>
+    </item>
     
     <item>
       <title>Simple tools for structuring understandable front-ends</title>
@@ -215,16 +225,6 @@ Why used a defined design process? Real problems arise when products and service
       
       <guid>https://proxycase.github.io/posts/first-day/</guid>
       <description>Hi! I&amp;rsquo;m Hugh, and today marks my first day as a Design Apprentice at 8th Light. For the last several years, I worked as a makerspace coordinator at the Northbrook Public Library, and helped design and build the makerspace from the ground-up, creating access to tools like 3D printers and laser cutters to the public. I created policies that shaped our services and opened up access to those outside of our own library, knowing that Northbrook is a unique area with plenty of resources to share.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://proxycase.github.io/posts/bem-with-data-attributes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://proxycase.github.io/posts/bem-with-data-attributes/</guid>
-      <description>Block Element ~Modifier~ Data-Attribute BEM has been super useful to my practice, considering that naming variables in any situation has the potential to be fairly difficult. Making things simple and succinct increases readability, and thus, maintainability, but we&amp;rsquo;re stuck in a place with CSS where we&amp;rsquo;re trying to represent roles of HTML elements that are getting more complex every day. So, what to do?
-One major problem that I see with the Block Element Modifier has been that it is practically useless without the use of a pre-compiler like Sass to make your code more maintainable.</description>
     </item>
     
   </channel>
